@@ -1,0 +1,3 @@
+event_id,request_id,staff_id,arrived_at,finished_at,confirmation
+E1,R81,W41,2026-02-21T08:50,2026-02-21T12:10,confirmed
+E2,R83,W42,,,not_completed

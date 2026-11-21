@@ -1,0 +1,51 @@
+{
+  "project": "陪诊与后续康复衔接资料",
+  "data_is_synthetic": true,
+  "encoding": "UTF-8",
+  "files": {
+    "requests.csv": {
+      "columns": [
+        "request_id",
+        "household_id",
+        "created_at",
+        "appointment_at",
+        "service_need",
+        "status"
+      ],
+      "row_count": 3
+    },
+    "changes.csv": {
+      "columns": [
+        "change_id",
+        "request_id",
+        "recorded_at",
+        "new_appointment",
+        "reason",
+        "revision"
+      ],
+      "row_count": 3
+    },
+    "attendance.csv": {
+      "columns": [
+        "event_id",
+        "request_id",
+        "staff_id",
+        "arrived_at",
+        "finished_at",
+        "confirmation"
+      ],
+      "row_count": 2
+    },
+    "followups.csv": {
+      "columns": [
+        "followup_id",
+        "request_id",
+        "support_type",
+        "due_at",
+        "status",
+        "source"
+      ],
+      "row_count": 2
+    }
+  }
+}
