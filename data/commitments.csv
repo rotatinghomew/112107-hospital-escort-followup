@@ -1,3 +1,8 @@
 trip,home,booking,role,shift,from,until,status
 Y3,H3,A4,out,K4,2026-06-10T08:45,2026-06-10T09:15,confirmed
 Y3,H3,A4,return,K3,2026-06-10T10:08,2026-06-10T10:40,confirmed
+Y1,H4,P1,out,S11,2026-05-27T08:20,2026-05-27T08:51,confirmed
+Y1,H4,P1,follow,S13,2026-05-27T10:12,2026-05-27T10:53,confirmed
+Y1,H4,P1,return,S13,2026-05-27T11:04,2026-05-27T11:29,confirmed
+Y2,H6,P3,out,S21,2026-06-03T08:42,2026-06-03T09:05,confirmed
+Y2,H6,P3,return,S23,2026-06-03T10:20,2026-06-03T10:57,confirmed

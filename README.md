@@ -11,6 +11,10 @@
 - `data/handover.csv`：第三方授权及承接变更；同 id 以通知时点可见的最后一条为准。
 - `data/commitments.csv`：既有已确认服务明细，用途中同一 trip 表示同一对外行程。
 - `data/appointment_notices.csv`：医院取消通知和有缺口的交接凭据。
+- `data/closing_days.csv`：站点移交的日档目录；`cutoff` 是历史派班截点，`complete` 指该日受理、供给和后续登记资料是否齐备，不保证每单均有签收。
+- `data/intake_register.csv`：受理台留存的办理结论，不等同于实际发生的陪诊。`known_at` 是上报时刻。
+- `data/trip_receipts.csv`：现场凭据发生时间和回填时间分开；完成交接需有对应地点与签收。
+- `data/extra_shift_quotes.csv`：额外班次的报价，星期按周一为 1，服务时段为当地时间；费用为每个适用服务日的总价，单位分。
 
 ## 环境及检查
 

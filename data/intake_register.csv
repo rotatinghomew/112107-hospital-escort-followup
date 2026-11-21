@@ -1,0 +1,7 @@
+booking,known_at,disposition,related
+P1,2026-05-26T14:35,confirmed,Y1
+P2,2026-05-26T15:46,no_complete_trip,
+P3,2026-06-02T14:05,confirmed,Y2
+P4,2026-06-02T15:25,no_complete_trip,
+P5,2026-06-03T11:25,cancelled,
+A4,2026-06-08T11:00,confirmed,Y3

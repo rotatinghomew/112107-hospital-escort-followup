@@ -16,7 +16,7 @@
         "support",
         "expires"
       ],
-      "row_count": 4
+      "row_count": 9
     },
     "households.csv": {
       "columns": [
@@ -27,7 +27,7 @@
         "next_latest",
         "requested_at"
       ],
-      "row_count": 3
+      "row_count": 8
     },
     "rides.csv": {
       "columns": [
@@ -38,7 +38,7 @@
         "until",
         "locations"
       ],
-      "row_count": 4
+      "row_count": 12
     },
     "routes.csv": {
       "columns": [
@@ -47,7 +47,7 @@
         "min_minutes",
         "max_minutes"
       ],
-      "row_count": 6
+      "row_count": 8
     },
     "handover.csv": {
       "columns": [
@@ -72,7 +72,7 @@
         "until",
         "status"
       ],
-      "row_count": 2
+      "row_count": 7
     },
     "appointment_notices.csv": {
       "columns": [
@@ -82,6 +82,22 @@
         "kind",
         "related"
       ],
+      "row_count": 4
+    },
+    "closing_days.csv": {
+      "columns": ["day", "cutoff", "recorded_at", "unit", "complete"],
+      "row_count": 4
+    },
+    "intake_register.csv": {
+      "columns": ["booking", "known_at", "disposition", "related"],
+      "row_count": 6
+    },
+    "trip_receipts.csv": {
+      "columns": ["receipt", "trip", "booking", "kind", "location", "happened_at", "reported_at", "proof"],
+      "row_count": 11
+    },
+    "extra_shift_quotes.csv": {
+      "columns": ["plan", "unit", "weekday", "start", "end", "locations", "shift_count", "cost_cents", "valid_until"],
       "row_count": 3
     }
   }
