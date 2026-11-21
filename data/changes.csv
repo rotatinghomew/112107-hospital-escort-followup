@@ -1,4 +1,0 @@
-change_id,request_id,recorded_at,new_appointment,reason,revision
-C1,R81,2026-02-14,2026-02-21,hospital_rescheduled,2
-C2,R82,2026-02-19,,household_cancelled,2
-C3,R83,2026-02-20,2026-03-01,provider_unavailable,2

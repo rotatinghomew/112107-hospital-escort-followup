@@ -1,51 +1,88 @@
 {
-  "project": "陪诊与后续康复衔接资料",
   "data_is_synthetic": true,
-  "encoding": "UTF-8",
+  "timezone": "Asia/Shanghai",
   "files": {
-    "requests.csv": {
+    "bookings.csv": {
       "columns": [
-        "request_id",
-        "household_id",
-        "created_at",
-        "appointment_at",
-        "service_need",
+        "booking",
+        "home",
+        "date",
+        "clinic",
+        "arrival_from",
+        "arrival_until",
+        "release_from",
+        "release_until",
+        "max_wait",
+        "support",
+        "expires"
+      ],
+      "row_count": 4
+    },
+    "households.csv": {
+      "columns": [
+        "home",
+        "origin",
+        "return_to",
+        "following_site",
+        "next_latest",
+        "requested_at"
+      ],
+      "row_count": 3
+    },
+    "rides.csv": {
+      "columns": [
+        "shift",
+        "worker",
+        "date",
+        "from",
+        "until",
+        "locations"
+      ],
+      "row_count": 4
+    },
+    "routes.csv": {
+      "columns": [
+        "node_a",
+        "node_b",
+        "min_minutes",
+        "max_minutes"
+      ],
+      "row_count": 6
+    },
+    "handover.csv": {
+      "columns": [
+        "id",
+        "home",
+        "location",
+        "valid_from",
+        "valid_until",
+        "received_at",
         "status"
       ],
-      "row_count": 3
+      "row_count": 2
     },
-    "changes.csv": {
+    "commitments.csv": {
       "columns": [
-        "change_id",
-        "request_id",
-        "recorded_at",
-        "new_appointment",
-        "reason",
-        "revision"
-      ],
-      "row_count": 3
-    },
-    "attendance.csv": {
-      "columns": [
-        "event_id",
-        "request_id",
-        "staff_id",
-        "arrived_at",
-        "finished_at",
-        "confirmation"
+        "trip",
+        "home",
+        "booking",
+        "role",
+        "shift",
+        "from",
+        "until",
+        "status"
       ],
       "row_count": 2
     },
-    "followups.csv": {
+    "appointment_notices.csv": {
       "columns": [
-        "followup_id",
-        "request_id",
-        "support_type",
-        "due_at",
-        "status",
-        "source"
+        "booking",
+        "occurred_at",
+        "noted_at",
+        "kind",
+        "related"
       ],
-      "row_count": 2
+      "row_count": 3
     }
   }
 }

@@ -1,0 +1,4 @@
+booking,occurred_at,noted_at,kind,related
+A1,2026-06-08T12:00,2026-06-08T12:30,cancelled,
+A4,2026-06-10T09:12,2026-06-10T09:13,arrived,Y3
+A4,2026-06-10T10:20,2026-06-10T10:30,handover_no_signature,Y3

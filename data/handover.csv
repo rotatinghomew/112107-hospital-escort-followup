@@ -1,0 +1,3 @@
+id,home,location,valid_from,valid_until,received_at,status
+AUTH1,H2,门诊一,2026-06-10T10:15,2026-06-10T11:00,2026-06-01T10:00,uncertain
+AUTH1,H2,门诊一,2026-06-10T10:15,2026-06-10T11:00,2026-06-08T13:00,approved
