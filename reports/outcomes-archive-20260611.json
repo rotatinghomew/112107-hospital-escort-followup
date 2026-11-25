@@ -1,0 +1,496 @@
+{
+  "as_of": "2026-06-11T12:00",
+  "checkpoint_counts": {
+    "booking": {
+      "cancelled": 2
+    },
+    "record": {
+      "no_actual_record": 2
+    },
+    "hospital": {
+      "on_time": 2,
+      "late": 1
+    },
+    "hospital_release": {
+      "on_time": 3
+    },
+    "handover": {
+      "missing_proof_pending": 1,
+      "on_time": 3
+    },
+    "intake": {
+      "not_accepted": 2
+    }
+  },
+  "hospital_elapsed_by_site": {
+    "门诊一": {
+      "sample_count": 2,
+      "elapsed_minutes": [
+        63,
+        75
+      ],
+      "average_elapsed_minutes": 69.0,
+      "missing_evidence_rule": "缺少到/离院凭据的记录不参与平均，不按 0 分钟计入"
+    },
+    "门诊二": {
+      "sample_count": 1,
+      "elapsed_minutes": [
+        102
+      ],
+      "average_elapsed_minutes": 102.0,
+      "missing_evidence_rule": "缺少到/离院凭据的记录不参与平均，不按 0 分钟计入"
+    }
+  },
+  "hospital_average_usage_rule": "仅作实际结果展示；加班重放不使用院内平均耗时排班，而使用完整释放窗口和路线上限",
+  "bookings": [
+    {
+      "booking": "A1",
+      "home": "H1",
+      "date": "2026-06-10",
+      "trip": null,
+      "overall_status": "cancelled",
+      "intake_disposition": null,
+      "hospital_elapsed_minutes_if_both_evidence": null,
+      "receipts": [],
+      "wait_metrics_note": "仅有完整到离院凭据时计算院内停留；缺凭据为 null，不当作 0 等待",
+      "checkpoints": [
+        {
+          "point_type": "booking",
+          "point": "门诊一",
+          "status": "cancelled",
+          "occurred_at": "2026-06-08T12:00",
+          "registered_at": "2026-06-08T12:30",
+          "source": "appointment_notices"
+        }
+      ],
+      "evidence_visibility": {
+        "as_of": "2026-06-11T12:00",
+        "visible_receipts": [],
+        "later_reported_receipts": []
+      }
+    },
+    {
+      "booking": "A2",
+      "home": "H1",
+      "date": "2026-06-10",
+      "trip": null,
+      "overall_status": "no_actual_record",
+      "intake_disposition": null,
+      "hospital_elapsed_minutes_if_both_evidence": null,
+      "receipts": [],
+      "wait_metrics_note": "仅有完整到离院凭据时计算院内停留；缺凭据为 null，不当作 0 等待",
+      "checkpoints": [
+        {
+          "point_type": "record",
+          "point": "门诊二",
+          "status": "no_actual_record",
+          "rule": "无受理结论、承诺或凭据；日档不完整时不推断为已接单或缺证待核"
+        }
+      ],
+      "evidence_visibility": {
+        "as_of": "2026-06-11T12:00",
+        "visible_receipts": [],
+        "later_reported_receipts": []
+      }
+    },
+    {
+      "booking": "A3",
+      "home": "H2",
+      "date": "2026-06-10",
+      "trip": null,
+      "overall_status": "no_actual_record",
+      "intake_disposition": null,
+      "hospital_elapsed_minutes_if_both_evidence": null,
+      "receipts": [],
+      "wait_metrics_note": "仅有完整到离院凭据时计算院内停留；缺凭据为 null，不当作 0 等待",
+      "checkpoints": [
+        {
+          "point_type": "record",
+          "point": "门诊一",
+          "status": "no_actual_record",
+          "rule": "无受理结论、承诺或凭据；日档不完整时不推断为已接单或缺证待核"
+        }
+      ],
+      "evidence_visibility": {
+        "as_of": "2026-06-11T12:00",
+        "visible_receipts": [],
+        "later_reported_receipts": []
+      }
+    },
+    {
+      "booking": "A4",
+      "home": "H3",
+      "date": "2026-06-10",
+      "trip": "Y3",
+      "overall_status": "recorded",
+      "intake_disposition": "confirmed",
+      "hospital_elapsed_minutes_if_both_evidence": 63,
+      "receipts": [
+        {
+          "receipt": "R31",
+          "trip": "Y3",
+          "booking": "A4",
+          "kind": "released",
+          "location": "门诊一",
+          "actual_at": "2026-06-10T10:15",
+          "registered_at": "2026-06-10T10:21",
+          "proof": "门诊离室凭证"
+        },
+        {
+          "receipt": "R32",
+          "trip": "Y3",
+          "booking": "A4",
+          "kind": "handed_over",
+          "location": "南街",
+          "actual_at": "2026-06-10T10:40",
+          "registered_at": "2026-06-12T12:00",
+          "proof": "补领家属签收"
+        }
+      ],
+      "wait_metrics_note": "仅有完整到离院凭据时计算院内停留；缺凭据为 null，不当作 0 等待",
+      "checkpoints": [
+        {
+          "point_type": "hospital",
+          "point": "门诊一",
+          "status": "on_time",
+          "actual_at": "2026-06-10T09:12",
+          "registered_at": "2026-06-10T09:13",
+          "late_minutes": 0,
+          "source": "appointment_notices",
+          "proof": null
+        },
+        {
+          "point_type": "hospital_release",
+          "point": "门诊一",
+          "status": "on_time",
+          "actual_at": "2026-06-10T10:15",
+          "registered_at": "2026-06-10T10:21",
+          "late_minutes": 0,
+          "source": "trip_receipts",
+          "proof": "门诊离室凭证"
+        },
+        {
+          "point_type": "handover",
+          "point": "南街",
+          "role": "return",
+          "status": "missing_proof_pending",
+          "deadline": "2026-06-10T10:40",
+          "gap_notice_at": "2026-06-10T10:30",
+          "rule": "缺末段交接凭据时保持待核，不重新派去程；不得按零等待处理"
+        }
+      ],
+      "evidence_visibility": {
+        "as_of": "2026-06-11T12:00",
+        "visible_receipts": [
+          "R31"
+        ],
+        "later_reported_receipts": [
+          "R32"
+        ]
+      }
+    },
+    {
+      "booking": "P1",
+      "home": "H4",
+      "date": "2026-05-27",
+      "trip": "Y1",
+      "overall_status": "recorded",
+      "intake_disposition": "confirmed",
+      "hospital_elapsed_minutes_if_both_evidence": 102,
+      "receipts": [
+        {
+          "receipt": "R11",
+          "trip": "Y1",
+          "booking": "P1",
+          "kind": "picked_up",
+          "location": "北街",
+          "actual_at": "2026-05-27T08:24",
+          "registered_at": "2026-05-27T08:29",
+          "proof": "署名交接单"
+        },
+        {
+          "receipt": "R12",
+          "trip": "Y1",
+          "booking": "P1",
+          "kind": "arrived",
+          "location": "门诊二",
+          "actual_at": "2026-05-27T08:47",
+          "registered_at": "2026-05-27T08:52",
+          "proof": "门诊到达凭证"
+        },
+        {
+          "receipt": "R13",
+          "trip": "Y1",
+          "booking": "P1",
+          "kind": "released",
+          "location": "门诊二",
+          "actual_at": "2026-05-27T10:29",
+          "registered_at": "2026-05-27T10:30",
+          "proof": "门诊离室凭证"
+        },
+        {
+          "receipt": "R14",
+          "trip": "Y1",
+          "booking": "P1",
+          "kind": "handed_over",
+          "location": "中心站",
+          "actual_at": "2026-05-27T10:48",
+          "registered_at": "2026-05-27T10:52",
+          "proof": "站点接领单"
+        },
+        {
+          "receipt": "R15",
+          "trip": "Y1",
+          "booking": "P1",
+          "kind": "handed_over",
+          "location": "北街",
+          "actual_at": "2026-05-27T11:22",
+          "registered_at": "2026-05-27T11:27",
+          "proof": "家属签收"
+        }
+      ],
+      "wait_metrics_note": "仅有完整到离院凭据时计算院内停留；缺凭据为 null，不当作 0 等待",
+      "checkpoints": [
+        {
+          "point_type": "hospital",
+          "point": "门诊二",
+          "status": "on_time",
+          "actual_at": "2026-05-27T08:47",
+          "registered_at": "2026-05-27T08:52",
+          "late_minutes": 0,
+          "source": "trip_receipts",
+          "proof": "门诊到达凭证"
+        },
+        {
+          "point_type": "hospital_release",
+          "point": "门诊二",
+          "status": "on_time",
+          "actual_at": "2026-05-27T10:29",
+          "registered_at": "2026-05-27T10:30",
+          "late_minutes": 0,
+          "source": "trip_receipts",
+          "proof": "门诊离室凭证"
+        },
+        {
+          "point_type": "handover",
+          "point": "中心站",
+          "role": "follow",
+          "status": "on_time",
+          "registration_status": "registered",
+          "actual_at": "2026-05-27T10:48",
+          "registered_at": "2026-05-27T10:52",
+          "deadline": "2026-05-27T11:15",
+          "late_minutes": 0,
+          "registration_lag_minutes": 4,
+          "backfilled": false,
+          "backfilled_after_archive": false,
+          "receipt": "R14",
+          "proof": "站点接领单"
+        },
+        {
+          "point_type": "handover",
+          "point": "北街",
+          "role": "return",
+          "status": "on_time",
+          "registration_status": "registered",
+          "actual_at": "2026-05-27T11:22",
+          "registered_at": "2026-05-27T11:27",
+          "deadline": "2026-05-27T11:29",
+          "late_minutes": 0,
+          "registration_lag_minutes": 5,
+          "backfilled": false,
+          "backfilled_after_archive": false,
+          "receipt": "R15",
+          "proof": "家属签收"
+        }
+      ],
+      "evidence_visibility": {
+        "as_of": "2026-06-11T12:00",
+        "visible_receipts": [
+          "R11",
+          "R12",
+          "R13",
+          "R14",
+          "R15"
+        ],
+        "later_reported_receipts": []
+      }
+    },
+    {
+      "booking": "P2",
+      "home": "H5",
+      "date": "2026-05-27",
+      "trip": null,
+      "overall_status": "not_accepted",
+      "intake_disposition": "no_complete_trip",
+      "hospital_elapsed_minutes_if_both_evidence": null,
+      "receipts": [],
+      "wait_metrics_note": "仅有完整到离院凭据时计算院内停留；缺凭据为 null，不当作 0 等待",
+      "checkpoints": [
+        {
+          "point_type": "intake",
+          "point": "门诊一",
+          "status": "not_accepted",
+          "registered_at": "2026-05-26T15:46",
+          "disposition": "no_complete_trip"
+        }
+      ],
+      "evidence_visibility": {
+        "as_of": "2026-06-11T12:00",
+        "visible_receipts": [],
+        "later_reported_receipts": []
+      }
+    },
+    {
+      "booking": "P3",
+      "home": "H6",
+      "date": "2026-06-03",
+      "trip": "Y2",
+      "overall_status": "recorded",
+      "intake_disposition": "confirmed",
+      "hospital_elapsed_minutes_if_both_evidence": 75,
+      "receipts": [
+        {
+          "receipt": "R21",
+          "trip": "Y2",
+          "booking": "P3",
+          "kind": "picked_up",
+          "location": "南街",
+          "actual_at": "2026-06-03T08:47",
+          "registered_at": "2026-06-03T08:51",
+          "proof": "署名交接单"
+        },
+        {
+          "receipt": "R22",
+          "trip": "Y2",
+          "booking": "P3",
+          "kind": "arrived",
+          "location": "门诊一",
+          "actual_at": "2026-06-03T09:12",
+          "registered_at": "2026-06-03T09:14",
+          "proof": "门诊到达凭证"
+        },
+        {
+          "receipt": "R23",
+          "trip": "Y2",
+          "booking": "P3",
+          "kind": "released",
+          "location": "门诊一",
+          "actual_at": "2026-06-03T10:27",
+          "registered_at": "2026-06-03T10:28",
+          "proof": "门诊离室凭证"
+        },
+        {
+          "receipt": "R24",
+          "trip": "Y2",
+          "booking": "P3",
+          "kind": "handed_over",
+          "location": "南街",
+          "actual_at": "2026-06-03T10:53",
+          "registered_at": "2026-06-03T11:03",
+          "proof": "家属签收"
+        }
+      ],
+      "wait_metrics_note": "仅有完整到离院凭据时计算院内停留；缺凭据为 null，不当作 0 等待",
+      "checkpoints": [
+        {
+          "point_type": "hospital",
+          "point": "门诊一",
+          "status": "late",
+          "actual_at": "2026-06-03T09:12",
+          "registered_at": "2026-06-03T09:14",
+          "late_minutes": 7,
+          "source": "trip_receipts",
+          "proof": "门诊到达凭证"
+        },
+        {
+          "point_type": "hospital_release",
+          "point": "门诊一",
+          "status": "on_time",
+          "actual_at": "2026-06-03T10:27",
+          "registered_at": "2026-06-03T10:28",
+          "late_minutes": 0,
+          "source": "trip_receipts",
+          "proof": "门诊离室凭证"
+        },
+        {
+          "point_type": "handover",
+          "point": "南街",
+          "role": "return",
+          "status": "on_time",
+          "registration_status": "registered",
+          "actual_at": "2026-06-03T10:53",
+          "registered_at": "2026-06-03T11:03",
+          "deadline": "2026-06-03T10:57",
+          "late_minutes": 0,
+          "registration_lag_minutes": 10,
+          "backfilled": false,
+          "backfilled_after_archive": false,
+          "receipt": "R24",
+          "proof": "家属签收"
+        }
+      ],
+      "evidence_visibility": {
+        "as_of": "2026-06-11T12:00",
+        "visible_receipts": [
+          "R21",
+          "R22",
+          "R23",
+          "R24"
+        ],
+        "later_reported_receipts": []
+      }
+    },
+    {
+      "booking": "P4",
+      "home": "H7",
+      "date": "2026-06-03",
+      "trip": null,
+      "overall_status": "not_accepted",
+      "intake_disposition": "no_complete_trip",
+      "hospital_elapsed_minutes_if_both_evidence": null,
+      "receipts": [],
+      "wait_metrics_note": "仅有完整到离院凭据时计算院内停留；缺凭据为 null，不当作 0 等待",
+      "checkpoints": [
+        {
+          "point_type": "intake",
+          "point": "门诊二",
+          "status": "not_accepted",
+          "registered_at": "2026-06-02T15:25",
+          "disposition": "no_complete_trip"
+        }
+      ],
+      "evidence_visibility": {
+        "as_of": "2026-06-11T12:00",
+        "visible_receipts": [],
+        "later_reported_receipts": []
+      }
+    },
+    {
+      "booking": "P5",
+      "home": "H8",
+      "date": "2026-06-04",
+      "trip": null,
+      "overall_status": "cancelled",
+      "intake_disposition": "cancelled",
+      "hospital_elapsed_minutes_if_both_evidence": null,
+      "receipts": [],
+      "wait_metrics_note": "仅有完整到离院凭据时计算院内停留；缺凭据为 null，不当作 0 等待",
+      "checkpoints": [
+        {
+          "point_type": "booking",
+          "point": "门诊一",
+          "status": "cancelled",
+          "occurred_at": "2026-06-03T11:15",
+          "registered_at": "2026-06-03T11:25",
+          "source": "appointment_notices"
+        }
+      ],
+      "evidence_visibility": {
+        "as_of": "2026-06-11T12:00",
+        "visible_receipts": [],
+        "later_reported_receipts": []
+      }
+    }
+  ]
+}

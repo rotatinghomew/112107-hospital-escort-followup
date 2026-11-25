@@ -1,0 +1,181 @@
+{
+  "day": "2026-06-10",
+  "as_of": "2026-06-08T13:05",
+  "quote_plans": [],
+  "shifts": [
+    {
+      "shift": "K1",
+      "worker": "W1",
+      "start": "2026-06-10T08:00",
+      "end": "2026-06-10T11:30",
+      "locations": [
+        "中心站",
+        "北街",
+        "南街",
+        "门诊一",
+        "门诊二"
+      ],
+      "source": "rides",
+      "plan": null
+    },
+    {
+      "shift": "K2",
+      "worker": "W2",
+      "start": "2026-06-10T08:00",
+      "end": "2026-06-10T10:40",
+      "locations": [
+        "中心站",
+        "北街",
+        "门诊一",
+        "门诊二"
+      ],
+      "source": "rides",
+      "plan": null
+    },
+    {
+      "shift": "K3",
+      "worker": "W3",
+      "start": "2026-06-10T09:55",
+      "end": "2026-06-10T12:00",
+      "locations": [
+        "中心站",
+        "南街",
+        "门诊一",
+        "门诊二"
+      ],
+      "source": "rides",
+      "plan": null
+    },
+    {
+      "shift": "K4",
+      "worker": "W4",
+      "start": "2026-06-10T08:10",
+      "end": "2026-06-10T09:20",
+      "locations": [
+        "南街",
+        "门诊一"
+      ],
+      "source": "rides",
+      "plan": null
+    }
+  ],
+  "results": [
+    {
+      "ok": true,
+      "demand_key": "H2@2026-06-10",
+      "home": "H2",
+      "day": "2026-06-10",
+      "status": "reserved_complete",
+      "priority": {
+        "earliest_expires": "2026-06-08T15:50",
+        "requested_at": "2026-06-01T09:30",
+        "order": "2026-06-08T15:50 < 2026-06-01T09:30 < H2"
+      },
+      "selected_booking": "A3",
+      "trip_kind": "outbound_then_authorized_relay",
+      "hold_until": "2026-06-08T15:50",
+      "assignments": [
+        {
+          "role": "outbound",
+          "start_node": "南街",
+          "end_node": "门诊一",
+          "start": "2026-06-10T08:38",
+          "end": "2026-06-10T08:58",
+          "shift": "K1",
+          "worker": "W1",
+          "source": "rides",
+          "plan": null
+        }
+      ],
+      "relay": {
+        "authorization": "AUTH1",
+        "location": "门诊一",
+        "valid_from": "2026-06-10T10:15",
+        "valid_until": "2026-06-10T11:00",
+        "status": "approved"
+      },
+      "reasons": [],
+      "already_confirmed_trip": null
+    },
+    {
+      "ok": false,
+      "demand_key": "H1@2026-06-10",
+      "home": "H1",
+      "day": "2026-06-10",
+      "status": "unable_complete",
+      "priority": {
+        "earliest_expires": "2026-06-08T16:00",
+        "requested_at": "2026-06-01T09:00",
+        "order": "2026-06-08T16:00 < 2026-06-01T09:00 < H1"
+      },
+      "selected_booking": null,
+      "trip_kind": null,
+      "hold_until": null,
+      "assignments": [],
+      "relay": null,
+      "reasons": [
+        {
+          "code": "worker_promised_to_other_household",
+          "message": "outbound 候选员工 W1 在承诺时段已有安排"
+        }
+      ],
+      "already_confirmed_trip": null
+    },
+    {
+      "ok": true,
+      "demand_key": "H3@2026-06-10",
+      "home": "H3",
+      "day": "2026-06-10",
+      "status": "already_confirmed",
+      "priority": {
+        "earliest_expires": "2026-06-08T16:30",
+        "requested_at": "2026-06-02T10:00",
+        "order": "2026-06-08T16:30 < 2026-06-02T10:00 < H3"
+      },
+      "selected_booking": "A4",
+      "trip_kind": null,
+      "hold_until": "2026-06-08T16:30",
+      "assignments": [],
+      "relay": null,
+      "reasons": [],
+      "already_confirmed_trip": "Y3"
+    }
+  ],
+  "cancellation_scopes": [
+    {
+      "booking": "A1",
+      "home": "H1",
+      "date": "2026-06-10",
+      "occurred_at": "2026-06-08T12:00",
+      "noted_at": "2026-06-08T12:30",
+      "invalid_scope": [
+        "booking_option:A1"
+      ],
+      "affected_trips": [],
+      "remaining_valid_commitments": [],
+      "remaining_promise_rule": "其余有效承诺继续占用；在家庭同意整段改签前不得改派给其他家庭",
+      "whole_rebooking_consent_required": true
+    },
+    {
+      "booking": "P5",
+      "home": "H8",
+      "date": "2026-06-04",
+      "occurred_at": "2026-06-03T11:15",
+      "noted_at": "2026-06-03T11:25",
+      "invalid_scope": [
+        "booking_option:P5"
+      ],
+      "affected_trips": [],
+      "remaining_valid_commitments": [],
+      "remaining_promise_rule": "其余有效承诺继续占用；在家庭同意整段改签前不得改派给其他家庭",
+      "whole_rebooking_consent_required": true
+    }
+  ],
+  "pending_verification": [],
+  "trip_kind_labels": {
+    "outbound_return_home": "单程去院后直接返程回家（双人/单人按预约）",
+    "outbound_follow_return_home": "出门→医院→后续地点交接→回家的完整行程",
+    "outbound_follow_handover": "出门→医院→后续地点并完成交接",
+    "outbound_then_authorized_relay": "去程后由已批准授权亲属在医院接棒，替代返程"
+  }
+}

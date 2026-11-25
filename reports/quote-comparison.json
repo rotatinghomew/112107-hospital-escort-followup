@@ -1,0 +1,2811 @@
+{
+  "comparable_complete_days": [
+    {
+      "day": "2026-05-27",
+      "weekday": 3,
+      "unit": "北区",
+      "cutoff": "2026-05-26T16:00",
+      "recorded_at": "2026-05-28T12:00",
+      "complete": true,
+      "evidence": {
+        "day": "2026-05-27",
+        "declared_complete": true,
+        "booking_count": 2,
+        "intake_booking_count": 2,
+        "missing_intake_at_cutoff": [],
+        "shift_count": 4,
+        "supply_evidence_present": true,
+        "usable_for_increment": true
+      }
+    },
+    {
+      "day": "2026-06-03",
+      "weekday": 3,
+      "unit": "北区",
+      "cutoff": "2026-06-02T16:00",
+      "recorded_at": "2026-06-04T12:00",
+      "complete": true,
+      "evidence": {
+        "day": "2026-06-03",
+        "declared_complete": true,
+        "booking_count": 2,
+        "intake_booking_count": 2,
+        "missing_intake_at_cutoff": [],
+        "shift_count": 4,
+        "supply_evidence_present": true,
+        "usable_for_increment": true
+      }
+    }
+  ],
+  "all_evidence_complete_days": [
+    {
+      "day": "2026-05-27",
+      "weekday": 3,
+      "unit": "北区",
+      "cutoff": "2026-05-26T16:00",
+      "recorded_at": "2026-05-28T12:00",
+      "complete": true,
+      "evidence": {
+        "day": "2026-05-27",
+        "declared_complete": true,
+        "booking_count": 2,
+        "intake_booking_count": 2,
+        "missing_intake_at_cutoff": [],
+        "shift_count": 4,
+        "supply_evidence_present": true,
+        "usable_for_increment": true
+      }
+    },
+    {
+      "day": "2026-06-03",
+      "weekday": 3,
+      "unit": "北区",
+      "cutoff": "2026-06-02T16:00",
+      "recorded_at": "2026-06-04T12:00",
+      "complete": true,
+      "evidence": {
+        "day": "2026-06-03",
+        "declared_complete": true,
+        "booking_count": 2,
+        "intake_booking_count": 2,
+        "missing_intake_at_cutoff": [],
+        "shift_count": 4,
+        "supply_evidence_present": true,
+        "usable_for_increment": true
+      }
+    }
+  ],
+  "excluded_days": [
+    {
+      "day": "2026-06-04",
+      "weekday": 4,
+      "complete": false,
+      "unit": "北区",
+      "reason": "日档不完整，不能作为增班收益依据"
+    },
+    {
+      "day": "2026-06-10",
+      "weekday": 3,
+      "complete": false,
+      "unit": "北区",
+      "reason": "日档不完整，不能作为增班收益依据"
+    }
+  ],
+  "comparisons": [
+    {
+      "plan": "E1",
+      "unit": "北区",
+      "weekday": 3,
+      "window": "08:00-09:30",
+      "locations": [
+        "北街",
+        "南街",
+        "门诊一",
+        "门诊二"
+      ],
+      "shift_count_per_day": 1,
+      "cost_cents_per_applicable_day": 13000,
+      "cost_yuan_per_applicable_day": 130.0,
+      "valid_until": "2026-06-18T17:00",
+      "quote_accepted_by_decision_time": true,
+      "replayed_days": [
+        "2026-05-27",
+        "2026-06-03"
+      ],
+      "replay_day_details": [
+        {
+          "day": "2026-05-27",
+          "weekday": 3,
+          "unit": "北区",
+          "cutoff": "2026-05-26T16:00",
+          "complete_archive": true,
+          "quote_plan": "E1",
+          "conditions": {
+            "included_bookings_at_cutoff": [
+              "P1",
+              "P2"
+            ],
+            "original_shift_ids": [
+              "S11",
+              "S12",
+              "S14",
+              "S13"
+            ],
+            "protected_commitment_trips": [
+              "Y1"
+            ],
+            "visibility_rule": "只使用 cutoff 前 known/noted/received 的请求、受理结论、授权和承诺；实际离院、事后批准、迟来签收和 cutoff 后取消不参与排班",
+            "source_sha256": {
+              "appointment_notices.csv": "c83696b1e1373113c728a90296ef915523b477d08b225fc0230de598a7950498",
+              "bookings.csv": "822267bd2d476a566835badea5da4af2fb6c771ce0c717fa96a81c59d6cadc75",
+              "closing_days.csv": "eddb3916d19953abf4fe1aaa9822cdc498601a2074e04041dffb3fc63e98c498",
+              "commitments.csv": "4b213cef1d821772b7c1863d2f1ed9e30837b140ff78858ae316a19efd55459b",
+              "extra_shift_quotes.csv": "e5334b8b8868c2fd5ee355dacb8af6f6e03acb51dd8b7aa7b1d21aefc6a21c61",
+              "handover.csv": "aacad2686a1462d4a23312ce542f2c3bd68083c26523c3165070a1256603c1fe",
+              "households.csv": "d591927aee4be4fc4726d1f9e0bb3178249b55f4eb240b4c5c21e583f1e3044e",
+              "intake_register.csv": "9300b1aa21ce9e54113edb9654cb9fdafb871eb10939a49064898b387d8d32b1",
+              "rides.csv": "0327443f3a62cb51b166a2a175d2e3bfa4d75ce932f5fa2444b1ebaa8e04709a",
+              "routes.csv": "9e347dc812f86bc89df96b4a6457779a6fa9031fd14ede7e8c48fa8efb86dc58",
+              "trip_receipts.csv": "e9f2355ca7948df407dc7577e2fb34650d7e597ff33c50dbde073b4313334485"
+            }
+          },
+          "baseline_served_keys": [
+            "H4@2026-05-27"
+          ],
+          "quote_served_keys": [
+            "H4@2026-05-27"
+          ],
+          "additional_households": [],
+          "additional_count": 0,
+          "still_unaccepted": [
+            {
+              "demand_key": "H5@2026-05-27",
+              "booking": null,
+              "reasons": [
+                {
+                  "code": "shift_window_or_crew_shortage",
+                  "message": "return 需要 2 人同时覆盖 10:38–11:00，符合时段的员工不足"
+                }
+              ]
+            }
+          ],
+          "baseline_plan": {
+            "day": "2026-05-27",
+            "as_of": "2026-05-26T16:00",
+            "quote_plans": [],
+            "shifts": [
+              {
+                "shift": "S11",
+                "worker": "W1",
+                "start": "2026-05-27T08:00",
+                "end": "2026-05-27T09:30",
+                "locations": [
+                  "北街",
+                  "南街",
+                  "门诊一",
+                  "门诊二"
+                ],
+                "source": "rides",
+                "plan": null
+              },
+              {
+                "shift": "S12",
+                "worker": "W2",
+                "start": "2026-05-27T08:00",
+                "end": "2026-05-27T09:45",
+                "locations": [
+                  "北街",
+                  "南街",
+                  "门诊一",
+                  "门诊二"
+                ],
+                "source": "rides",
+                "plan": null
+              },
+              {
+                "shift": "S14",
+                "worker": "W4",
+                "start": "2026-05-27T08:00",
+                "end": "2026-05-27T09:30",
+                "locations": [
+                  "南街",
+                  "门诊一"
+                ],
+                "source": "rides",
+                "plan": null
+              },
+              {
+                "shift": "S13",
+                "worker": "W3",
+                "start": "2026-05-27T09:55",
+                "end": "2026-05-27T12:00",
+                "locations": [
+                  "中心站",
+                  "北街",
+                  "南街",
+                  "门诊一",
+                  "门诊二"
+                ],
+                "source": "rides",
+                "plan": null
+              }
+            ],
+            "results": [
+              {
+                "ok": true,
+                "demand_key": "H4@2026-05-27",
+                "home": "H4",
+                "day": "2026-05-27",
+                "status": "already_confirmed",
+                "priority": {
+                  "earliest_expires": "2026-05-26T16:45",
+                  "requested_at": "2026-05-20T09:00",
+                  "order": "2026-05-26T16:45 < 2026-05-20T09:00 < H4"
+                },
+                "selected_booking": "P1",
+                "trip_kind": null,
+                "hold_until": "2026-05-26T16:45",
+                "assignments": [],
+                "relay": null,
+                "reasons": [],
+                "already_confirmed_trip": "Y1"
+              },
+              {
+                "ok": false,
+                "demand_key": "H5@2026-05-27",
+                "home": "H5",
+                "day": "2026-05-27",
+                "status": "unable_complete",
+                "priority": {
+                  "earliest_expires": "2026-05-26T17:00",
+                  "requested_at": "2026-05-20T11:00",
+                  "order": "2026-05-26T17:00 < 2026-05-20T11:00 < H5"
+                },
+                "selected_booking": null,
+                "trip_kind": null,
+                "hold_until": null,
+                "assignments": [],
+                "relay": null,
+                "reasons": [
+                  {
+                    "code": "shift_window_or_crew_shortage",
+                    "message": "return 需要 2 人同时覆盖 10:38–11:00，符合时段的员工不足"
+                  }
+                ],
+                "already_confirmed_trip": null
+              }
+            ],
+            "cancellation_scopes": [],
+            "pending_verification": []
+          },
+          "quote_plan_result": {
+            "day": "2026-05-27",
+            "as_of": "2026-05-26T16:00",
+            "quote_plans": [
+              "E1"
+            ],
+            "shifts": [
+              {
+                "shift": "S11",
+                "worker": "W1",
+                "start": "2026-05-27T08:00",
+                "end": "2026-05-27T09:30",
+                "locations": [
+                  "北街",
+                  "南街",
+                  "门诊一",
+                  "门诊二"
+                ],
+                "source": "rides",
+                "plan": null
+              },
+              {
+                "shift": "S12",
+                "worker": "W2",
+                "start": "2026-05-27T08:00",
+                "end": "2026-05-27T09:45",
+                "locations": [
+                  "北街",
+                  "南街",
+                  "门诊一",
+                  "门诊二"
+                ],
+                "source": "rides",
+                "plan": null
+              },
+              {
+                "shift": "S14",
+                "worker": "W4",
+                "start": "2026-05-27T08:00",
+                "end": "2026-05-27T09:30",
+                "locations": [
+                  "南街",
+                  "门诊一"
+                ],
+                "source": "rides",
+                "plan": null
+              },
+              {
+                "shift": "S13",
+                "worker": "W3",
+                "start": "2026-05-27T09:55",
+                "end": "2026-05-27T12:00",
+                "locations": [
+                  "中心站",
+                  "北街",
+                  "南街",
+                  "门诊一",
+                  "门诊二"
+                ],
+                "source": "rides",
+                "plan": null
+              },
+              {
+                "shift": "E1#1",
+                "worker": "QUOTE-E1-W1",
+                "start": "2026-05-27T08:00",
+                "end": "2026-05-27T09:30",
+                "locations": [
+                  "北街",
+                  "南街",
+                  "门诊一",
+                  "门诊二"
+                ],
+                "source": "quote",
+                "plan": "E1"
+              }
+            ],
+            "results": [
+              {
+                "ok": true,
+                "demand_key": "H4@2026-05-27",
+                "home": "H4",
+                "day": "2026-05-27",
+                "status": "already_confirmed",
+                "priority": {
+                  "earliest_expires": "2026-05-26T16:45",
+                  "requested_at": "2026-05-20T09:00",
+                  "order": "2026-05-26T16:45 < 2026-05-20T09:00 < H4"
+                },
+                "selected_booking": "P1",
+                "trip_kind": null,
+                "hold_until": "2026-05-26T16:45",
+                "assignments": [],
+                "relay": null,
+                "reasons": [],
+                "already_confirmed_trip": "Y1"
+              },
+              {
+                "ok": false,
+                "demand_key": "H5@2026-05-27",
+                "home": "H5",
+                "day": "2026-05-27",
+                "status": "unable_complete",
+                "priority": {
+                  "earliest_expires": "2026-05-26T17:00",
+                  "requested_at": "2026-05-20T11:00",
+                  "order": "2026-05-26T17:00 < 2026-05-20T11:00 < H5"
+                },
+                "selected_booking": null,
+                "trip_kind": null,
+                "hold_until": null,
+                "assignments": [],
+                "relay": null,
+                "reasons": [
+                  {
+                    "code": "shift_window_or_crew_shortage",
+                    "message": "return 需要 2 人同时覆盖 10:38–11:00，符合时段的员工不足"
+                  }
+                ],
+                "already_confirmed_trip": null
+              }
+            ],
+            "cancellation_scopes": [],
+            "pending_verification": []
+          }
+        },
+        {
+          "day": "2026-06-03",
+          "weekday": 3,
+          "unit": "北区",
+          "cutoff": "2026-06-02T16:00",
+          "complete_archive": true,
+          "quote_plan": "E1",
+          "conditions": {
+            "included_bookings_at_cutoff": [
+              "P3",
+              "P4"
+            ],
+            "original_shift_ids": [
+              "S21",
+              "S22",
+              "S24",
+              "S23"
+            ],
+            "protected_commitment_trips": [
+              "Y2"
+            ],
+            "visibility_rule": "只使用 cutoff 前 known/noted/received 的请求、受理结论、授权和承诺；实际离院、事后批准、迟来签收和 cutoff 后取消不参与排班",
+            "source_sha256": {
+              "appointment_notices.csv": "c83696b1e1373113c728a90296ef915523b477d08b225fc0230de598a7950498",
+              "bookings.csv": "822267bd2d476a566835badea5da4af2fb6c771ce0c717fa96a81c59d6cadc75",
+              "closing_days.csv": "eddb3916d19953abf4fe1aaa9822cdc498601a2074e04041dffb3fc63e98c498",
+              "commitments.csv": "4b213cef1d821772b7c1863d2f1ed9e30837b140ff78858ae316a19efd55459b",
+              "extra_shift_quotes.csv": "e5334b8b8868c2fd5ee355dacb8af6f6e03acb51dd8b7aa7b1d21aefc6a21c61",
+              "handover.csv": "aacad2686a1462d4a23312ce542f2c3bd68083c26523c3165070a1256603c1fe",
+              "households.csv": "d591927aee4be4fc4726d1f9e0bb3178249b55f4eb240b4c5c21e583f1e3044e",
+              "intake_register.csv": "9300b1aa21ce9e54113edb9654cb9fdafb871eb10939a49064898b387d8d32b1",
+              "rides.csv": "0327443f3a62cb51b166a2a175d2e3bfa4d75ce932f5fa2444b1ebaa8e04709a",
+              "routes.csv": "9e347dc812f86bc89df96b4a6457779a6fa9031fd14ede7e8c48fa8efb86dc58",
+              "trip_receipts.csv": "e9f2355ca7948df407dc7577e2fb34650d7e597ff33c50dbde073b4313334485"
+            }
+          },
+          "baseline_served_keys": [
+            "H6@2026-06-03"
+          ],
+          "quote_served_keys": [
+            "H6@2026-06-03"
+          ],
+          "additional_households": [],
+          "additional_count": 0,
+          "still_unaccepted": [
+            {
+              "demand_key": "H7@2026-06-03",
+              "booking": null,
+              "reasons": [
+                {
+                  "code": "shift_window_or_crew_shortage",
+                  "message": "return 需要 2 人同时覆盖 10:38–11:02，符合时段的员工不足"
+                }
+              ]
+            }
+          ],
+          "baseline_plan": {
+            "day": "2026-06-03",
+            "as_of": "2026-06-02T16:00",
+            "quote_plans": [],
+            "shifts": [
+              {
+                "shift": "S21",
+                "worker": "W1",
+                "start": "2026-06-03T08:00",
+                "end": "2026-06-03T09:20",
+                "locations": [
+                  "北街",
+                  "南街",
+                  "门诊一",
+                  "门诊二"
+                ],
+                "source": "rides",
+                "plan": null
+              },
+              {
+                "shift": "S22",
+                "worker": "W2",
+                "start": "2026-06-03T08:00",
+                "end": "2026-06-03T09:40",
+                "locations": [
+                  "北街",
+                  "南街",
+                  "门诊一",
+                  "门诊二"
+                ],
+                "source": "rides",
+                "plan": null
+              },
+              {
+                "shift": "S24",
+                "worker": "W4",
+                "start": "2026-06-03T08:00",
+                "end": "2026-06-03T09:45",
+                "locations": [
+                  "北街",
+                  "门诊二"
+                ],
+                "source": "rides",
+                "plan": null
+              },
+              {
+                "shift": "S23",
+                "worker": "W3",
+                "start": "2026-06-03T09:55",
+                "end": "2026-06-03T12:00",
+                "locations": [
+                  "中心站",
+                  "北街",
+                  "南街",
+                  "门诊一",
+                  "门诊二"
+                ],
+                "source": "rides",
+                "plan": null
+              }
+            ],
+            "results": [
+              {
+                "ok": false,
+                "demand_key": "H7@2026-06-03",
+                "home": "H7",
+                "day": "2026-06-03",
+                "status": "unable_complete",
+                "priority": {
+                  "earliest_expires": "2026-06-02T16:40",
+                  "requested_at": "2026-05-27T10:00",
+                  "order": "2026-06-02T16:40 < 2026-05-27T10:00 < H7"
+                },
+                "selected_booking": null,
+                "trip_kind": null,
+                "hold_until": null,
+                "assignments": [],
+                "relay": null,
+                "reasons": [
+                  {
+                    "code": "shift_window_or_crew_shortage",
+                    "message": "return 需要 2 人同时覆盖 10:38–11:02，符合时段的员工不足"
+                  }
+                ],
+                "already_confirmed_trip": null
+              },
+              {
+                "ok": true,
+                "demand_key": "H6@2026-06-03",
+                "home": "H6",
+                "day": "2026-06-03",
+                "status": "already_confirmed",
+                "priority": {
+                  "earliest_expires": "2026-06-02T17:00",
+                  "requested_at": "2026-05-27T08:00",
+                  "order": "2026-06-02T17:00 < 2026-05-27T08:00 < H6"
+                },
+                "selected_booking": "P3",
+                "trip_kind": null,
+                "hold_until": "2026-06-02T17:00",
+                "assignments": [],
+                "relay": null,
+                "reasons": [],
+                "already_confirmed_trip": "Y2"
+              }
+            ],
+            "cancellation_scopes": [],
+            "pending_verification": []
+          },
+          "quote_plan_result": {
+            "day": "2026-06-03",
+            "as_of": "2026-06-02T16:00",
+            "quote_plans": [
+              "E1"
+            ],
+            "shifts": [
+              {
+                "shift": "S21",
+                "worker": "W1",
+                "start": "2026-06-03T08:00",
+                "end": "2026-06-03T09:20",
+                "locations": [
+                  "北街",
+                  "南街",
+                  "门诊一",
+                  "门诊二"
+                ],
+                "source": "rides",
+                "plan": null
+              },
+              {
+                "shift": "S22",
+                "worker": "W2",
+                "start": "2026-06-03T08:00",
+                "end": "2026-06-03T09:40",
+                "locations": [
+                  "北街",
+                  "南街",
+                  "门诊一",
+                  "门诊二"
+                ],
+                "source": "rides",
+                "plan": null
+              },
+              {
+                "shift": "S24",
+                "worker": "W4",
+                "start": "2026-06-03T08:00",
+                "end": "2026-06-03T09:45",
+                "locations": [
+                  "北街",
+                  "门诊二"
+                ],
+                "source": "rides",
+                "plan": null
+              },
+              {
+                "shift": "S23",
+                "worker": "W3",
+                "start": "2026-06-03T09:55",
+                "end": "2026-06-03T12:00",
+                "locations": [
+                  "中心站",
+                  "北街",
+                  "南街",
+                  "门诊一",
+                  "门诊二"
+                ],
+                "source": "rides",
+                "plan": null
+              },
+              {
+                "shift": "E1#1",
+                "worker": "QUOTE-E1-W1",
+                "start": "2026-06-03T08:00",
+                "end": "2026-06-03T09:30",
+                "locations": [
+                  "北街",
+                  "南街",
+                  "门诊一",
+                  "门诊二"
+                ],
+                "source": "quote",
+                "plan": "E1"
+              }
+            ],
+            "results": [
+              {
+                "ok": false,
+                "demand_key": "H7@2026-06-03",
+                "home": "H7",
+                "day": "2026-06-03",
+                "status": "unable_complete",
+                "priority": {
+                  "earliest_expires": "2026-06-02T16:40",
+                  "requested_at": "2026-05-27T10:00",
+                  "order": "2026-06-02T16:40 < 2026-05-27T10:00 < H7"
+                },
+                "selected_booking": null,
+                "trip_kind": null,
+                "hold_until": null,
+                "assignments": [],
+                "relay": null,
+                "reasons": [
+                  {
+                    "code": "shift_window_or_crew_shortage",
+                    "message": "return 需要 2 人同时覆盖 10:38–11:02，符合时段的员工不足"
+                  }
+                ],
+                "already_confirmed_trip": null
+              },
+              {
+                "ok": true,
+                "demand_key": "H6@2026-06-03",
+                "home": "H6",
+                "day": "2026-06-03",
+                "status": "already_confirmed",
+                "priority": {
+                  "earliest_expires": "2026-06-02T17:00",
+                  "requested_at": "2026-05-27T08:00",
+                  "order": "2026-06-02T17:00 < 2026-05-27T08:00 < H6"
+                },
+                "selected_booking": "P3",
+                "trip_kind": null,
+                "hold_until": "2026-06-02T17:00",
+                "assignments": [],
+                "relay": null,
+                "reasons": [],
+                "already_confirmed_trip": "Y2"
+              }
+            ],
+            "cancellation_scopes": [],
+            "pending_verification": []
+          }
+        }
+      ],
+      "additional_household_day_trips": 0,
+      "distinct_added_homes": [],
+      "average_additional_per_applicable_day": 0.0,
+      "added_category_counts": {},
+      "added_category_labels": {},
+      "replay_cost_cents_for_all_comparable_days": 26000,
+      "replay_cost_yuan_for_all_comparable_days": 260.0,
+      "cost_cents_per_added_household_in_replay": null,
+      "remaining_unaccepted": [
+        {
+          "day": "2026-05-27",
+          "demand_key": "H5@2026-05-27",
+          "booking": null,
+          "reasons": [
+            {
+              "code": "shift_window_or_crew_shortage",
+              "message": "return 需要 2 人同时覆盖 10:38–11:00，符合时段的员工不足"
+            }
+          ]
+        },
+        {
+          "day": "2026-06-03",
+          "demand_key": "H7@2026-06-03",
+          "booking": null,
+          "reasons": [
+            {
+              "code": "shift_window_or_crew_shortage",
+              "message": "return 需要 2 人同时覆盖 10:38–11:02，符合时段的员工不足"
+            }
+          ]
+        }
+      ],
+      "substitution_audit": [
+        {
+          "day": "2026-05-27",
+          "trip": "Y1",
+          "booking": "P1",
+          "role": "out",
+          "old_shift": "S11",
+          "quote_shifts_able_to_replace": [
+            "E1#1"
+          ],
+          "net_new_treatment": "替换原承诺不计增单；固定承诺 replay 不移动"
+        },
+        {
+          "day": "2026-06-03",
+          "trip": "Y2",
+          "booking": "P3",
+          "role": "out",
+          "old_shift": "S21",
+          "quote_shifts_able_to_replace": [
+            "E1#1"
+          ],
+          "net_new_treatment": "替换原承诺不计增单；固定承诺 replay 不移动"
+        }
+      ],
+      "net_new_only_rule": "已确认 Y1/Y2 等行程作为硬承诺保留；新增只计原 baseline 未覆盖户，不把 Quote 班组替换原有订单算作增单"
+    },
+    {
+      "plan": "E2",
+      "unit": "北区",
+      "weekday": 3,
+      "window": "09:50-11:50",
+      "locations": [
+        "中心站",
+        "北街",
+        "南街",
+        "门诊一",
+        "门诊二"
+      ],
+      "shift_count_per_day": 1,
+      "cost_cents_per_applicable_day": 16000,
+      "cost_yuan_per_applicable_day": 160.0,
+      "valid_until": "2026-06-18T17:00",
+      "quote_accepted_by_decision_time": true,
+      "replayed_days": [
+        "2026-05-27",
+        "2026-06-03"
+      ],
+      "replay_day_details": [
+        {
+          "day": "2026-05-27",
+          "weekday": 3,
+          "unit": "北区",
+          "cutoff": "2026-05-26T16:00",
+          "complete_archive": true,
+          "quote_plan": "E2",
+          "conditions": {
+            "included_bookings_at_cutoff": [
+              "P1",
+              "P2"
+            ],
+            "original_shift_ids": [
+              "S11",
+              "S12",
+              "S14",
+              "S13"
+            ],
+            "protected_commitment_trips": [
+              "Y1"
+            ],
+            "visibility_rule": "只使用 cutoff 前 known/noted/received 的请求、受理结论、授权和承诺；实际离院、事后批准、迟来签收和 cutoff 后取消不参与排班",
+            "source_sha256": {
+              "appointment_notices.csv": "c83696b1e1373113c728a90296ef915523b477d08b225fc0230de598a7950498",
+              "bookings.csv": "822267bd2d476a566835badea5da4af2fb6c771ce0c717fa96a81c59d6cadc75",
+              "closing_days.csv": "eddb3916d19953abf4fe1aaa9822cdc498601a2074e04041dffb3fc63e98c498",
+              "commitments.csv": "4b213cef1d821772b7c1863d2f1ed9e30837b140ff78858ae316a19efd55459b",
+              "extra_shift_quotes.csv": "e5334b8b8868c2fd5ee355dacb8af6f6e03acb51dd8b7aa7b1d21aefc6a21c61",
+              "handover.csv": "aacad2686a1462d4a23312ce542f2c3bd68083c26523c3165070a1256603c1fe",
+              "households.csv": "d591927aee4be4fc4726d1f9e0bb3178249b55f4eb240b4c5c21e583f1e3044e",
+              "intake_register.csv": "9300b1aa21ce9e54113edb9654cb9fdafb871eb10939a49064898b387d8d32b1",
+              "rides.csv": "0327443f3a62cb51b166a2a175d2e3bfa4d75ce932f5fa2444b1ebaa8e04709a",
+              "routes.csv": "9e347dc812f86bc89df96b4a6457779a6fa9031fd14ede7e8c48fa8efb86dc58",
+              "trip_receipts.csv": "e9f2355ca7948df407dc7577e2fb34650d7e597ff33c50dbde073b4313334485"
+            }
+          },
+          "baseline_served_keys": [
+            "H4@2026-05-27"
+          ],
+          "quote_served_keys": [
+            "H4@2026-05-27"
+          ],
+          "additional_households": [],
+          "additional_count": 0,
+          "still_unaccepted": [
+            {
+              "demand_key": "H5@2026-05-27",
+              "booking": null,
+              "reasons": [
+                {
+                  "code": "worker_promised_to_other_household",
+                  "message": "return 候选员工 W3 在承诺时段已有安排"
+                }
+              ]
+            }
+          ],
+          "baseline_plan": {
+            "day": "2026-05-27",
+            "as_of": "2026-05-26T16:00",
+            "quote_plans": [],
+            "shifts": [
+              {
+                "shift": "S11",
+                "worker": "W1",
+                "start": "2026-05-27T08:00",
+                "end": "2026-05-27T09:30",
+                "locations": [
+                  "北街",
+                  "南街",
+                  "门诊一",
+                  "门诊二"
+                ],
+                "source": "rides",
+                "plan": null
+              },
+              {
+                "shift": "S12",
+                "worker": "W2",
+                "start": "2026-05-27T08:00",
+                "end": "2026-05-27T09:45",
+                "locations": [
+                  "北街",
+                  "南街",
+                  "门诊一",
+                  "门诊二"
+                ],
+                "source": "rides",
+                "plan": null
+              },
+              {
+                "shift": "S14",
+                "worker": "W4",
+                "start": "2026-05-27T08:00",
+                "end": "2026-05-27T09:30",
+                "locations": [
+                  "南街",
+                  "门诊一"
+                ],
+                "source": "rides",
+                "plan": null
+              },
+              {
+                "shift": "S13",
+                "worker": "W3",
+                "start": "2026-05-27T09:55",
+                "end": "2026-05-27T12:00",
+                "locations": [
+                  "中心站",
+                  "北街",
+                  "南街",
+                  "门诊一",
+                  "门诊二"
+                ],
+                "source": "rides",
+                "plan": null
+              }
+            ],
+            "results": [
+              {
+                "ok": true,
+                "demand_key": "H4@2026-05-27",
+                "home": "H4",
+                "day": "2026-05-27",
+                "status": "already_confirmed",
+                "priority": {
+                  "earliest_expires": "2026-05-26T16:45",
+                  "requested_at": "2026-05-20T09:00",
+                  "order": "2026-05-26T16:45 < 2026-05-20T09:00 < H4"
+                },
+                "selected_booking": "P1",
+                "trip_kind": null,
+                "hold_until": "2026-05-26T16:45",
+                "assignments": [],
+                "relay": null,
+                "reasons": [],
+                "already_confirmed_trip": "Y1"
+              },
+              {
+                "ok": false,
+                "demand_key": "H5@2026-05-27",
+                "home": "H5",
+                "day": "2026-05-27",
+                "status": "unable_complete",
+                "priority": {
+                  "earliest_expires": "2026-05-26T17:00",
+                  "requested_at": "2026-05-20T11:00",
+                  "order": "2026-05-26T17:00 < 2026-05-20T11:00 < H5"
+                },
+                "selected_booking": null,
+                "trip_kind": null,
+                "hold_until": null,
+                "assignments": [],
+                "relay": null,
+                "reasons": [
+                  {
+                    "code": "shift_window_or_crew_shortage",
+                    "message": "return 需要 2 人同时覆盖 10:38–11:00，符合时段的员工不足"
+                  }
+                ],
+                "already_confirmed_trip": null
+              }
+            ],
+            "cancellation_scopes": [],
+            "pending_verification": []
+          },
+          "quote_plan_result": {
+            "day": "2026-05-27",
+            "as_of": "2026-05-26T16:00",
+            "quote_plans": [
+              "E2"
+            ],
+            "shifts": [
+              {
+                "shift": "S11",
+                "worker": "W1",
+                "start": "2026-05-27T08:00",
+                "end": "2026-05-27T09:30",
+                "locations": [
+                  "北街",
+                  "南街",
+                  "门诊一",
+                  "门诊二"
+                ],
+                "source": "rides",
+                "plan": null
+              },
+              {
+                "shift": "S12",
+                "worker": "W2",
+                "start": "2026-05-27T08:00",
+                "end": "2026-05-27T09:45",
+                "locations": [
+                  "北街",
+                  "南街",
+                  "门诊一",
+                  "门诊二"
+                ],
+                "source": "rides",
+                "plan": null
+              },
+              {
+                "shift": "S14",
+                "worker": "W4",
+                "start": "2026-05-27T08:00",
+                "end": "2026-05-27T09:30",
+                "locations": [
+                  "南街",
+                  "门诊一"
+                ],
+                "source": "rides",
+                "plan": null
+              },
+              {
+                "shift": "S13",
+                "worker": "W3",
+                "start": "2026-05-27T09:55",
+                "end": "2026-05-27T12:00",
+                "locations": [
+                  "中心站",
+                  "北街",
+                  "南街",
+                  "门诊一",
+                  "门诊二"
+                ],
+                "source": "rides",
+                "plan": null
+              },
+              {
+                "shift": "E2#1",
+                "worker": "QUOTE-E2-W1",
+                "start": "2026-05-27T09:50",
+                "end": "2026-05-27T11:50",
+                "locations": [
+                  "中心站",
+                  "北街",
+                  "南街",
+                  "门诊一",
+                  "门诊二"
+                ],
+                "source": "quote",
+                "plan": "E2"
+              }
+            ],
+            "results": [
+              {
+                "ok": true,
+                "demand_key": "H4@2026-05-27",
+                "home": "H4",
+                "day": "2026-05-27",
+                "status": "already_confirmed",
+                "priority": {
+                  "earliest_expires": "2026-05-26T16:45",
+                  "requested_at": "2026-05-20T09:00",
+                  "order": "2026-05-26T16:45 < 2026-05-20T09:00 < H4"
+                },
+                "selected_booking": "P1",
+                "trip_kind": null,
+                "hold_until": "2026-05-26T16:45",
+                "assignments": [],
+                "relay": null,
+                "reasons": [],
+                "already_confirmed_trip": "Y1"
+              },
+              {
+                "ok": false,
+                "demand_key": "H5@2026-05-27",
+                "home": "H5",
+                "day": "2026-05-27",
+                "status": "unable_complete",
+                "priority": {
+                  "earliest_expires": "2026-05-26T17:00",
+                  "requested_at": "2026-05-20T11:00",
+                  "order": "2026-05-26T17:00 < 2026-05-20T11:00 < H5"
+                },
+                "selected_booking": null,
+                "trip_kind": null,
+                "hold_until": null,
+                "assignments": [],
+                "relay": null,
+                "reasons": [
+                  {
+                    "code": "worker_promised_to_other_household",
+                    "message": "return 候选员工 W3 在承诺时段已有安排"
+                  }
+                ],
+                "already_confirmed_trip": null
+              }
+            ],
+            "cancellation_scopes": [],
+            "pending_verification": []
+          }
+        },
+        {
+          "day": "2026-06-03",
+          "weekday": 3,
+          "unit": "北区",
+          "cutoff": "2026-06-02T16:00",
+          "complete_archive": true,
+          "quote_plan": "E2",
+          "conditions": {
+            "included_bookings_at_cutoff": [
+              "P3",
+              "P4"
+            ],
+            "original_shift_ids": [
+              "S21",
+              "S22",
+              "S24",
+              "S23"
+            ],
+            "protected_commitment_trips": [
+              "Y2"
+            ],
+            "visibility_rule": "只使用 cutoff 前 known/noted/received 的请求、受理结论、授权和承诺；实际离院、事后批准、迟来签收和 cutoff 后取消不参与排班",
+            "source_sha256": {
+              "appointment_notices.csv": "c83696b1e1373113c728a90296ef915523b477d08b225fc0230de598a7950498",
+              "bookings.csv": "822267bd2d476a566835badea5da4af2fb6c771ce0c717fa96a81c59d6cadc75",
+              "closing_days.csv": "eddb3916d19953abf4fe1aaa9822cdc498601a2074e04041dffb3fc63e98c498",
+              "commitments.csv": "4b213cef1d821772b7c1863d2f1ed9e30837b140ff78858ae316a19efd55459b",
+              "extra_shift_quotes.csv": "e5334b8b8868c2fd5ee355dacb8af6f6e03acb51dd8b7aa7b1d21aefc6a21c61",
+              "handover.csv": "aacad2686a1462d4a23312ce542f2c3bd68083c26523c3165070a1256603c1fe",
+              "households.csv": "d591927aee4be4fc4726d1f9e0bb3178249b55f4eb240b4c5c21e583f1e3044e",
+              "intake_register.csv": "9300b1aa21ce9e54113edb9654cb9fdafb871eb10939a49064898b387d8d32b1",
+              "rides.csv": "0327443f3a62cb51b166a2a175d2e3bfa4d75ce932f5fa2444b1ebaa8e04709a",
+              "routes.csv": "9e347dc812f86bc89df96b4a6457779a6fa9031fd14ede7e8c48fa8efb86dc58",
+              "trip_receipts.csv": "e9f2355ca7948df407dc7577e2fb34650d7e597ff33c50dbde073b4313334485"
+            }
+          },
+          "baseline_served_keys": [
+            "H6@2026-06-03"
+          ],
+          "quote_served_keys": [
+            "H6@2026-06-03"
+          ],
+          "additional_households": [],
+          "additional_count": 0,
+          "still_unaccepted": [
+            {
+              "demand_key": "H7@2026-06-03",
+              "booking": null,
+              "reasons": [
+                {
+                  "code": "worker_promised_to_other_household",
+                  "message": "return 候选员工 W3 在承诺时段已有安排"
+                }
+              ]
+            }
+          ],
+          "baseline_plan": {
+            "day": "2026-06-03",
+            "as_of": "2026-06-02T16:00",
+            "quote_plans": [],
+            "shifts": [
+              {
+                "shift": "S21",
+                "worker": "W1",
+                "start": "2026-06-03T08:00",
+                "end": "2026-06-03T09:20",
+                "locations": [
+                  "北街",
+                  "南街",
+                  "门诊一",
+                  "门诊二"
+                ],
+                "source": "rides",
+                "plan": null
+              },
+              {
+                "shift": "S22",
+                "worker": "W2",
+                "start": "2026-06-03T08:00",
+                "end": "2026-06-03T09:40",
+                "locations": [
+                  "北街",
+                  "南街",
+                  "门诊一",
+                  "门诊二"
+                ],
+                "source": "rides",
+                "plan": null
+              },
+              {
+                "shift": "S24",
+                "worker": "W4",
+                "start": "2026-06-03T08:00",
+                "end": "2026-06-03T09:45",
+                "locations": [
+                  "北街",
+                  "门诊二"
+                ],
+                "source": "rides",
+                "plan": null
+              },
+              {
+                "shift": "S23",
+                "worker": "W3",
+                "start": "2026-06-03T09:55",
+                "end": "2026-06-03T12:00",
+                "locations": [
+                  "中心站",
+                  "北街",
+                  "南街",
+                  "门诊一",
+                  "门诊二"
+                ],
+                "source": "rides",
+                "plan": null
+              }
+            ],
+            "results": [
+              {
+                "ok": false,
+                "demand_key": "H7@2026-06-03",
+                "home": "H7",
+                "day": "2026-06-03",
+                "status": "unable_complete",
+                "priority": {
+                  "earliest_expires": "2026-06-02T16:40",
+                  "requested_at": "2026-05-27T10:00",
+                  "order": "2026-06-02T16:40 < 2026-05-27T10:00 < H7"
+                },
+                "selected_booking": null,
+                "trip_kind": null,
+                "hold_until": null,
+                "assignments": [],
+                "relay": null,
+                "reasons": [
+                  {
+                    "code": "shift_window_or_crew_shortage",
+                    "message": "return 需要 2 人同时覆盖 10:38–11:02，符合时段的员工不足"
+                  }
+                ],
+                "already_confirmed_trip": null
+              },
+              {
+                "ok": true,
+                "demand_key": "H6@2026-06-03",
+                "home": "H6",
+                "day": "2026-06-03",
+                "status": "already_confirmed",
+                "priority": {
+                  "earliest_expires": "2026-06-02T17:00",
+                  "requested_at": "2026-05-27T08:00",
+                  "order": "2026-06-02T17:00 < 2026-05-27T08:00 < H6"
+                },
+                "selected_booking": "P3",
+                "trip_kind": null,
+                "hold_until": "2026-06-02T17:00",
+                "assignments": [],
+                "relay": null,
+                "reasons": [],
+                "already_confirmed_trip": "Y2"
+              }
+            ],
+            "cancellation_scopes": [],
+            "pending_verification": []
+          },
+          "quote_plan_result": {
+            "day": "2026-06-03",
+            "as_of": "2026-06-02T16:00",
+            "quote_plans": [
+              "E2"
+            ],
+            "shifts": [
+              {
+                "shift": "S21",
+                "worker": "W1",
+                "start": "2026-06-03T08:00",
+                "end": "2026-06-03T09:20",
+                "locations": [
+                  "北街",
+                  "南街",
+                  "门诊一",
+                  "门诊二"
+                ],
+                "source": "rides",
+                "plan": null
+              },
+              {
+                "shift": "S22",
+                "worker": "W2",
+                "start": "2026-06-03T08:00",
+                "end": "2026-06-03T09:40",
+                "locations": [
+                  "北街",
+                  "南街",
+                  "门诊一",
+                  "门诊二"
+                ],
+                "source": "rides",
+                "plan": null
+              },
+              {
+                "shift": "S24",
+                "worker": "W4",
+                "start": "2026-06-03T08:00",
+                "end": "2026-06-03T09:45",
+                "locations": [
+                  "北街",
+                  "门诊二"
+                ],
+                "source": "rides",
+                "plan": null
+              },
+              {
+                "shift": "S23",
+                "worker": "W3",
+                "start": "2026-06-03T09:55",
+                "end": "2026-06-03T12:00",
+                "locations": [
+                  "中心站",
+                  "北街",
+                  "南街",
+                  "门诊一",
+                  "门诊二"
+                ],
+                "source": "rides",
+                "plan": null
+              },
+              {
+                "shift": "E2#1",
+                "worker": "QUOTE-E2-W1",
+                "start": "2026-06-03T09:50",
+                "end": "2026-06-03T11:50",
+                "locations": [
+                  "中心站",
+                  "北街",
+                  "南街",
+                  "门诊一",
+                  "门诊二"
+                ],
+                "source": "quote",
+                "plan": "E2"
+              }
+            ],
+            "results": [
+              {
+                "ok": false,
+                "demand_key": "H7@2026-06-03",
+                "home": "H7",
+                "day": "2026-06-03",
+                "status": "unable_complete",
+                "priority": {
+                  "earliest_expires": "2026-06-02T16:40",
+                  "requested_at": "2026-05-27T10:00",
+                  "order": "2026-06-02T16:40 < 2026-05-27T10:00 < H7"
+                },
+                "selected_booking": null,
+                "trip_kind": null,
+                "hold_until": null,
+                "assignments": [],
+                "relay": null,
+                "reasons": [
+                  {
+                    "code": "worker_promised_to_other_household",
+                    "message": "return 候选员工 W3 在承诺时段已有安排"
+                  }
+                ],
+                "already_confirmed_trip": null
+              },
+              {
+                "ok": true,
+                "demand_key": "H6@2026-06-03",
+                "home": "H6",
+                "day": "2026-06-03",
+                "status": "already_confirmed",
+                "priority": {
+                  "earliest_expires": "2026-06-02T17:00",
+                  "requested_at": "2026-05-27T08:00",
+                  "order": "2026-06-02T17:00 < 2026-05-27T08:00 < H6"
+                },
+                "selected_booking": "P3",
+                "trip_kind": null,
+                "hold_until": "2026-06-02T17:00",
+                "assignments": [],
+                "relay": null,
+                "reasons": [],
+                "already_confirmed_trip": "Y2"
+              }
+            ],
+            "cancellation_scopes": [],
+            "pending_verification": []
+          }
+        }
+      ],
+      "additional_household_day_trips": 0,
+      "distinct_added_homes": [],
+      "average_additional_per_applicable_day": 0.0,
+      "added_category_counts": {},
+      "added_category_labels": {},
+      "replay_cost_cents_for_all_comparable_days": 32000,
+      "replay_cost_yuan_for_all_comparable_days": 320.0,
+      "cost_cents_per_added_household_in_replay": null,
+      "remaining_unaccepted": [
+        {
+          "day": "2026-05-27",
+          "demand_key": "H5@2026-05-27",
+          "booking": null,
+          "reasons": [
+            {
+              "code": "worker_promised_to_other_household",
+              "message": "return 候选员工 W3 在承诺时段已有安排"
+            }
+          ]
+        },
+        {
+          "day": "2026-06-03",
+          "demand_key": "H7@2026-06-03",
+          "booking": null,
+          "reasons": [
+            {
+              "code": "worker_promised_to_other_household",
+              "message": "return 候选员工 W3 在承诺时段已有安排"
+            }
+          ]
+        }
+      ],
+      "substitution_audit": [
+        {
+          "day": "2026-05-27",
+          "trip": "Y1",
+          "booking": "P1",
+          "role": "follow",
+          "old_shift": "S13",
+          "quote_shifts_able_to_replace": [
+            "E2#1"
+          ],
+          "net_new_treatment": "替换原承诺不计增单；固定承诺 replay 不移动"
+        },
+        {
+          "day": "2026-05-27",
+          "trip": "Y1",
+          "booking": "P1",
+          "role": "return",
+          "old_shift": "S13",
+          "quote_shifts_able_to_replace": [
+            "E2#1"
+          ],
+          "net_new_treatment": "替换原承诺不计增单；固定承诺 replay 不移动"
+        },
+        {
+          "day": "2026-06-03",
+          "trip": "Y2",
+          "booking": "P3",
+          "role": "return",
+          "old_shift": "S23",
+          "quote_shifts_able_to_replace": [
+            "E2#1"
+          ],
+          "net_new_treatment": "替换原承诺不计增单；固定承诺 replay 不移动"
+        }
+      ],
+      "net_new_only_rule": "已确认 Y1/Y2 等行程作为硬承诺保留；新增只计原 baseline 未覆盖户，不把 Quote 班组替换原有订单算作增单"
+    },
+    {
+      "plan": "E3",
+      "unit": "北区",
+      "weekday": 3,
+      "window": "09:50-11:50",
+      "locations": [
+        "中心站",
+        "北街",
+        "南街",
+        "门诊一",
+        "门诊二"
+      ],
+      "shift_count_per_day": 2,
+      "cost_cents_per_applicable_day": 30000,
+      "cost_yuan_per_applicable_day": 300.0,
+      "valid_until": "2026-06-18T17:00",
+      "quote_accepted_by_decision_time": true,
+      "replayed_days": [
+        "2026-05-27",
+        "2026-06-03"
+      ],
+      "replay_day_details": [
+        {
+          "day": "2026-05-27",
+          "weekday": 3,
+          "unit": "北区",
+          "cutoff": "2026-05-26T16:00",
+          "complete_archive": true,
+          "quote_plan": "E3",
+          "conditions": {
+            "included_bookings_at_cutoff": [
+              "P1",
+              "P2"
+            ],
+            "original_shift_ids": [
+              "S11",
+              "S12",
+              "S14",
+              "S13"
+            ],
+            "protected_commitment_trips": [
+              "Y1"
+            ],
+            "visibility_rule": "只使用 cutoff 前 known/noted/received 的请求、受理结论、授权和承诺；实际离院、事后批准、迟来签收和 cutoff 后取消不参与排班",
+            "source_sha256": {
+              "appointment_notices.csv": "c83696b1e1373113c728a90296ef915523b477d08b225fc0230de598a7950498",
+              "bookings.csv": "822267bd2d476a566835badea5da4af2fb6c771ce0c717fa96a81c59d6cadc75",
+              "closing_days.csv": "eddb3916d19953abf4fe1aaa9822cdc498601a2074e04041dffb3fc63e98c498",
+              "commitments.csv": "4b213cef1d821772b7c1863d2f1ed9e30837b140ff78858ae316a19efd55459b",
+              "extra_shift_quotes.csv": "e5334b8b8868c2fd5ee355dacb8af6f6e03acb51dd8b7aa7b1d21aefc6a21c61",
+              "handover.csv": "aacad2686a1462d4a23312ce542f2c3bd68083c26523c3165070a1256603c1fe",
+              "households.csv": "d591927aee4be4fc4726d1f9e0bb3178249b55f4eb240b4c5c21e583f1e3044e",
+              "intake_register.csv": "9300b1aa21ce9e54113edb9654cb9fdafb871eb10939a49064898b387d8d32b1",
+              "rides.csv": "0327443f3a62cb51b166a2a175d2e3bfa4d75ce932f5fa2444b1ebaa8e04709a",
+              "routes.csv": "9e347dc812f86bc89df96b4a6457779a6fa9031fd14ede7e8c48fa8efb86dc58",
+              "trip_receipts.csv": "e9f2355ca7948df407dc7577e2fb34650d7e597ff33c50dbde073b4313334485"
+            }
+          },
+          "baseline_served_keys": [
+            "H4@2026-05-27"
+          ],
+          "quote_served_keys": [
+            "H4@2026-05-27",
+            "H5@2026-05-27"
+          ],
+          "additional_households": [
+            {
+              "demand_key": "H5@2026-05-27",
+              "booking": "P2",
+              "trip_kind": "outbound_return_home",
+              "trip_kind_label": "单程去院后直接返程回家（双人/单人按预约）",
+              "assignments": [
+                {
+                  "role": "outbound",
+                  "start_node": "南街",
+                  "end_node": "门诊一",
+                  "start": "2026-05-27T08:28",
+                  "end": "2026-05-27T08:48",
+                  "shift": "S12",
+                  "worker": "W2",
+                  "source": "rides",
+                  "plan": null
+                },
+                {
+                  "role": "outbound",
+                  "start_node": "南街",
+                  "end_node": "门诊一",
+                  "start": "2026-05-27T08:28",
+                  "end": "2026-05-27T08:48",
+                  "shift": "S14",
+                  "worker": "W4",
+                  "source": "rides",
+                  "plan": null
+                },
+                {
+                  "role": "return",
+                  "start_node": "门诊一",
+                  "end_node": "南街",
+                  "start": "2026-05-27T10:15",
+                  "end": "2026-05-27T11:00",
+                  "shift": "E3#1",
+                  "worker": "QUOTE-E3-W1",
+                  "source": "quote",
+                  "plan": "E3"
+                },
+                {
+                  "role": "return",
+                  "start_node": "门诊一",
+                  "end_node": "南街",
+                  "start": "2026-05-27T10:15",
+                  "end": "2026-05-27T11:00",
+                  "shift": "E3#2",
+                  "worker": "QUOTE-E3-W2",
+                  "source": "quote",
+                  "plan": "E3"
+                }
+              ]
+            }
+          ],
+          "additional_count": 1,
+          "still_unaccepted": [],
+          "baseline_plan": {
+            "day": "2026-05-27",
+            "as_of": "2026-05-26T16:00",
+            "quote_plans": [],
+            "shifts": [
+              {
+                "shift": "S11",
+                "worker": "W1",
+                "start": "2026-05-27T08:00",
+                "end": "2026-05-27T09:30",
+                "locations": [
+                  "北街",
+                  "南街",
+                  "门诊一",
+                  "门诊二"
+                ],
+                "source": "rides",
+                "plan": null
+              },
+              {
+                "shift": "S12",
+                "worker": "W2",
+                "start": "2026-05-27T08:00",
+                "end": "2026-05-27T09:45",
+                "locations": [
+                  "北街",
+                  "南街",
+                  "门诊一",
+                  "门诊二"
+                ],
+                "source": "rides",
+                "plan": null
+              },
+              {
+                "shift": "S14",
+                "worker": "W4",
+                "start": "2026-05-27T08:00",
+                "end": "2026-05-27T09:30",
+                "locations": [
+                  "南街",
+                  "门诊一"
+                ],
+                "source": "rides",
+                "plan": null
+              },
+              {
+                "shift": "S13",
+                "worker": "W3",
+                "start": "2026-05-27T09:55",
+                "end": "2026-05-27T12:00",
+                "locations": [
+                  "中心站",
+                  "北街",
+                  "南街",
+                  "门诊一",
+                  "门诊二"
+                ],
+                "source": "rides",
+                "plan": null
+              }
+            ],
+            "results": [
+              {
+                "ok": true,
+                "demand_key": "H4@2026-05-27",
+                "home": "H4",
+                "day": "2026-05-27",
+                "status": "already_confirmed",
+                "priority": {
+                  "earliest_expires": "2026-05-26T16:45",
+                  "requested_at": "2026-05-20T09:00",
+                  "order": "2026-05-26T16:45 < 2026-05-20T09:00 < H4"
+                },
+                "selected_booking": "P1",
+                "trip_kind": null,
+                "hold_until": "2026-05-26T16:45",
+                "assignments": [],
+                "relay": null,
+                "reasons": [],
+                "already_confirmed_trip": "Y1"
+              },
+              {
+                "ok": false,
+                "demand_key": "H5@2026-05-27",
+                "home": "H5",
+                "day": "2026-05-27",
+                "status": "unable_complete",
+                "priority": {
+                  "earliest_expires": "2026-05-26T17:00",
+                  "requested_at": "2026-05-20T11:00",
+                  "order": "2026-05-26T17:00 < 2026-05-20T11:00 < H5"
+                },
+                "selected_booking": null,
+                "trip_kind": null,
+                "hold_until": null,
+                "assignments": [],
+                "relay": null,
+                "reasons": [
+                  {
+                    "code": "shift_window_or_crew_shortage",
+                    "message": "return 需要 2 人同时覆盖 10:38–11:00，符合时段的员工不足"
+                  }
+                ],
+                "already_confirmed_trip": null
+              }
+            ],
+            "cancellation_scopes": [],
+            "pending_verification": []
+          },
+          "quote_plan_result": {
+            "day": "2026-05-27",
+            "as_of": "2026-05-26T16:00",
+            "quote_plans": [
+              "E3"
+            ],
+            "shifts": [
+              {
+                "shift": "S11",
+                "worker": "W1",
+                "start": "2026-05-27T08:00",
+                "end": "2026-05-27T09:30",
+                "locations": [
+                  "北街",
+                  "南街",
+                  "门诊一",
+                  "门诊二"
+                ],
+                "source": "rides",
+                "plan": null
+              },
+              {
+                "shift": "S12",
+                "worker": "W2",
+                "start": "2026-05-27T08:00",
+                "end": "2026-05-27T09:45",
+                "locations": [
+                  "北街",
+                  "南街",
+                  "门诊一",
+                  "门诊二"
+                ],
+                "source": "rides",
+                "plan": null
+              },
+              {
+                "shift": "S14",
+                "worker": "W4",
+                "start": "2026-05-27T08:00",
+                "end": "2026-05-27T09:30",
+                "locations": [
+                  "南街",
+                  "门诊一"
+                ],
+                "source": "rides",
+                "plan": null
+              },
+              {
+                "shift": "S13",
+                "worker": "W3",
+                "start": "2026-05-27T09:55",
+                "end": "2026-05-27T12:00",
+                "locations": [
+                  "中心站",
+                  "北街",
+                  "南街",
+                  "门诊一",
+                  "门诊二"
+                ],
+                "source": "rides",
+                "plan": null
+              },
+              {
+                "shift": "E3#1",
+                "worker": "QUOTE-E3-W1",
+                "start": "2026-05-27T09:50",
+                "end": "2026-05-27T11:50",
+                "locations": [
+                  "中心站",
+                  "北街",
+                  "南街",
+                  "门诊一",
+                  "门诊二"
+                ],
+                "source": "quote",
+                "plan": "E3"
+              },
+              {
+                "shift": "E3#2",
+                "worker": "QUOTE-E3-W2",
+                "start": "2026-05-27T09:50",
+                "end": "2026-05-27T11:50",
+                "locations": [
+                  "中心站",
+                  "北街",
+                  "南街",
+                  "门诊一",
+                  "门诊二"
+                ],
+                "source": "quote",
+                "plan": "E3"
+              }
+            ],
+            "results": [
+              {
+                "ok": true,
+                "demand_key": "H4@2026-05-27",
+                "home": "H4",
+                "day": "2026-05-27",
+                "status": "already_confirmed",
+                "priority": {
+                  "earliest_expires": "2026-05-26T16:45",
+                  "requested_at": "2026-05-20T09:00",
+                  "order": "2026-05-26T16:45 < 2026-05-20T09:00 < H4"
+                },
+                "selected_booking": "P1",
+                "trip_kind": null,
+                "hold_until": "2026-05-26T16:45",
+                "assignments": [],
+                "relay": null,
+                "reasons": [],
+                "already_confirmed_trip": "Y1"
+              },
+              {
+                "ok": true,
+                "demand_key": "H5@2026-05-27",
+                "home": "H5",
+                "day": "2026-05-27",
+                "status": "reserved_complete",
+                "priority": {
+                  "earliest_expires": "2026-05-26T17:00",
+                  "requested_at": "2026-05-20T11:00",
+                  "order": "2026-05-26T17:00 < 2026-05-20T11:00 < H5"
+                },
+                "selected_booking": "P2",
+                "trip_kind": "outbound_return_home",
+                "hold_until": "2026-05-26T17:00",
+                "assignments": [
+                  {
+                    "role": "outbound",
+                    "start_node": "南街",
+                    "end_node": "门诊一",
+                    "start": "2026-05-27T08:28",
+                    "end": "2026-05-27T08:48",
+                    "shift": "S12",
+                    "worker": "W2",
+                    "source": "rides",
+                    "plan": null
+                  },
+                  {
+                    "role": "outbound",
+                    "start_node": "南街",
+                    "end_node": "门诊一",
+                    "start": "2026-05-27T08:28",
+                    "end": "2026-05-27T08:48",
+                    "shift": "S14",
+                    "worker": "W4",
+                    "source": "rides",
+                    "plan": null
+                  },
+                  {
+                    "role": "return",
+                    "start_node": "门诊一",
+                    "end_node": "南街",
+                    "start": "2026-05-27T10:15",
+                    "end": "2026-05-27T11:00",
+                    "shift": "E3#1",
+                    "worker": "QUOTE-E3-W1",
+                    "source": "quote",
+                    "plan": "E3"
+                  },
+                  {
+                    "role": "return",
+                    "start_node": "门诊一",
+                    "end_node": "南街",
+                    "start": "2026-05-27T10:15",
+                    "end": "2026-05-27T11:00",
+                    "shift": "E3#2",
+                    "worker": "QUOTE-E3-W2",
+                    "source": "quote",
+                    "plan": "E3"
+                  }
+                ],
+                "relay": null,
+                "reasons": [],
+                "already_confirmed_trip": null
+              }
+            ],
+            "cancellation_scopes": [],
+            "pending_verification": []
+          }
+        },
+        {
+          "day": "2026-06-03",
+          "weekday": 3,
+          "unit": "北区",
+          "cutoff": "2026-06-02T16:00",
+          "complete_archive": true,
+          "quote_plan": "E3",
+          "conditions": {
+            "included_bookings_at_cutoff": [
+              "P3",
+              "P4"
+            ],
+            "original_shift_ids": [
+              "S21",
+              "S22",
+              "S24",
+              "S23"
+            ],
+            "protected_commitment_trips": [
+              "Y2"
+            ],
+            "visibility_rule": "只使用 cutoff 前 known/noted/received 的请求、受理结论、授权和承诺；实际离院、事后批准、迟来签收和 cutoff 后取消不参与排班",
+            "source_sha256": {
+              "appointment_notices.csv": "c83696b1e1373113c728a90296ef915523b477d08b225fc0230de598a7950498",
+              "bookings.csv": "822267bd2d476a566835badea5da4af2fb6c771ce0c717fa96a81c59d6cadc75",
+              "closing_days.csv": "eddb3916d19953abf4fe1aaa9822cdc498601a2074e04041dffb3fc63e98c498",
+              "commitments.csv": "4b213cef1d821772b7c1863d2f1ed9e30837b140ff78858ae316a19efd55459b",
+              "extra_shift_quotes.csv": "e5334b8b8868c2fd5ee355dacb8af6f6e03acb51dd8b7aa7b1d21aefc6a21c61",
+              "handover.csv": "aacad2686a1462d4a23312ce542f2c3bd68083c26523c3165070a1256603c1fe",
+              "households.csv": "d591927aee4be4fc4726d1f9e0bb3178249b55f4eb240b4c5c21e583f1e3044e",
+              "intake_register.csv": "9300b1aa21ce9e54113edb9654cb9fdafb871eb10939a49064898b387d8d32b1",
+              "rides.csv": "0327443f3a62cb51b166a2a175d2e3bfa4d75ce932f5fa2444b1ebaa8e04709a",
+              "routes.csv": "9e347dc812f86bc89df96b4a6457779a6fa9031fd14ede7e8c48fa8efb86dc58",
+              "trip_receipts.csv": "e9f2355ca7948df407dc7577e2fb34650d7e597ff33c50dbde073b4313334485"
+            }
+          },
+          "baseline_served_keys": [
+            "H6@2026-06-03"
+          ],
+          "quote_served_keys": [
+            "H6@2026-06-03",
+            "H7@2026-06-03"
+          ],
+          "additional_households": [
+            {
+              "demand_key": "H7@2026-06-03",
+              "booking": "P4",
+              "trip_kind": "outbound_return_home",
+              "trip_kind_label": "单程去院后直接返程回家（双人/单人按预约）",
+              "assignments": [
+                {
+                  "role": "outbound",
+                  "start_node": "北街",
+                  "end_node": "门诊二",
+                  "start": "2026-06-03T08:34",
+                  "end": "2026-06-03T08:58",
+                  "shift": "S22",
+                  "worker": "W2",
+                  "source": "rides",
+                  "plan": null
+                },
+                {
+                  "role": "outbound",
+                  "start_node": "北街",
+                  "end_node": "门诊二",
+                  "start": "2026-06-03T08:34",
+                  "end": "2026-06-03T08:58",
+                  "shift": "S24",
+                  "worker": "W4",
+                  "source": "rides",
+                  "plan": null
+                },
+                {
+                  "role": "return",
+                  "start_node": "门诊二",
+                  "end_node": "北街",
+                  "start": "2026-06-03T10:20",
+                  "end": "2026-06-03T11:02",
+                  "shift": "E3#1",
+                  "worker": "QUOTE-E3-W1",
+                  "source": "quote",
+                  "plan": "E3"
+                },
+                {
+                  "role": "return",
+                  "start_node": "门诊二",
+                  "end_node": "北街",
+                  "start": "2026-06-03T10:20",
+                  "end": "2026-06-03T11:02",
+                  "shift": "E3#2",
+                  "worker": "QUOTE-E3-W2",
+                  "source": "quote",
+                  "plan": "E3"
+                }
+              ]
+            }
+          ],
+          "additional_count": 1,
+          "still_unaccepted": [],
+          "baseline_plan": {
+            "day": "2026-06-03",
+            "as_of": "2026-06-02T16:00",
+            "quote_plans": [],
+            "shifts": [
+              {
+                "shift": "S21",
+                "worker": "W1",
+                "start": "2026-06-03T08:00",
+                "end": "2026-06-03T09:20",
+                "locations": [
+                  "北街",
+                  "南街",
+                  "门诊一",
+                  "门诊二"
+                ],
+                "source": "rides",
+                "plan": null
+              },
+              {
+                "shift": "S22",
+                "worker": "W2",
+                "start": "2026-06-03T08:00",
+                "end": "2026-06-03T09:40",
+                "locations": [
+                  "北街",
+                  "南街",
+                  "门诊一",
+                  "门诊二"
+                ],
+                "source": "rides",
+                "plan": null
+              },
+              {
+                "shift": "S24",
+                "worker": "W4",
+                "start": "2026-06-03T08:00",
+                "end": "2026-06-03T09:45",
+                "locations": [
+                  "北街",
+                  "门诊二"
+                ],
+                "source": "rides",
+                "plan": null
+              },
+              {
+                "shift": "S23",
+                "worker": "W3",
+                "start": "2026-06-03T09:55",
+                "end": "2026-06-03T12:00",
+                "locations": [
+                  "中心站",
+                  "北街",
+                  "南街",
+                  "门诊一",
+                  "门诊二"
+                ],
+                "source": "rides",
+                "plan": null
+              }
+            ],
+            "results": [
+              {
+                "ok": false,
+                "demand_key": "H7@2026-06-03",
+                "home": "H7",
+                "day": "2026-06-03",
+                "status": "unable_complete",
+                "priority": {
+                  "earliest_expires": "2026-06-02T16:40",
+                  "requested_at": "2026-05-27T10:00",
+                  "order": "2026-06-02T16:40 < 2026-05-27T10:00 < H7"
+                },
+                "selected_booking": null,
+                "trip_kind": null,
+                "hold_until": null,
+                "assignments": [],
+                "relay": null,
+                "reasons": [
+                  {
+                    "code": "shift_window_or_crew_shortage",
+                    "message": "return 需要 2 人同时覆盖 10:38–11:02，符合时段的员工不足"
+                  }
+                ],
+                "already_confirmed_trip": null
+              },
+              {
+                "ok": true,
+                "demand_key": "H6@2026-06-03",
+                "home": "H6",
+                "day": "2026-06-03",
+                "status": "already_confirmed",
+                "priority": {
+                  "earliest_expires": "2026-06-02T17:00",
+                  "requested_at": "2026-05-27T08:00",
+                  "order": "2026-06-02T17:00 < 2026-05-27T08:00 < H6"
+                },
+                "selected_booking": "P3",
+                "trip_kind": null,
+                "hold_until": "2026-06-02T17:00",
+                "assignments": [],
+                "relay": null,
+                "reasons": [],
+                "already_confirmed_trip": "Y2"
+              }
+            ],
+            "cancellation_scopes": [],
+            "pending_verification": []
+          },
+          "quote_plan_result": {
+            "day": "2026-06-03",
+            "as_of": "2026-06-02T16:00",
+            "quote_plans": [
+              "E3"
+            ],
+            "shifts": [
+              {
+                "shift": "S21",
+                "worker": "W1",
+                "start": "2026-06-03T08:00",
+                "end": "2026-06-03T09:20",
+                "locations": [
+                  "北街",
+                  "南街",
+                  "门诊一",
+                  "门诊二"
+                ],
+                "source": "rides",
+                "plan": null
+              },
+              {
+                "shift": "S22",
+                "worker": "W2",
+                "start": "2026-06-03T08:00",
+                "end": "2026-06-03T09:40",
+                "locations": [
+                  "北街",
+                  "南街",
+                  "门诊一",
+                  "门诊二"
+                ],
+                "source": "rides",
+                "plan": null
+              },
+              {
+                "shift": "S24",
+                "worker": "W4",
+                "start": "2026-06-03T08:00",
+                "end": "2026-06-03T09:45",
+                "locations": [
+                  "北街",
+                  "门诊二"
+                ],
+                "source": "rides",
+                "plan": null
+              },
+              {
+                "shift": "S23",
+                "worker": "W3",
+                "start": "2026-06-03T09:55",
+                "end": "2026-06-03T12:00",
+                "locations": [
+                  "中心站",
+                  "北街",
+                  "南街",
+                  "门诊一",
+                  "门诊二"
+                ],
+                "source": "rides",
+                "plan": null
+              },
+              {
+                "shift": "E3#1",
+                "worker": "QUOTE-E3-W1",
+                "start": "2026-06-03T09:50",
+                "end": "2026-06-03T11:50",
+                "locations": [
+                  "中心站",
+                  "北街",
+                  "南街",
+                  "门诊一",
+                  "门诊二"
+                ],
+                "source": "quote",
+                "plan": "E3"
+              },
+              {
+                "shift": "E3#2",
+                "worker": "QUOTE-E3-W2",
+                "start": "2026-06-03T09:50",
+                "end": "2026-06-03T11:50",
+                "locations": [
+                  "中心站",
+                  "北街",
+                  "南街",
+                  "门诊一",
+                  "门诊二"
+                ],
+                "source": "quote",
+                "plan": "E3"
+              }
+            ],
+            "results": [
+              {
+                "ok": true,
+                "demand_key": "H7@2026-06-03",
+                "home": "H7",
+                "day": "2026-06-03",
+                "status": "reserved_complete",
+                "priority": {
+                  "earliest_expires": "2026-06-02T16:40",
+                  "requested_at": "2026-05-27T10:00",
+                  "order": "2026-06-02T16:40 < 2026-05-27T10:00 < H7"
+                },
+                "selected_booking": "P4",
+                "trip_kind": "outbound_return_home",
+                "hold_until": "2026-06-02T16:40",
+                "assignments": [
+                  {
+                    "role": "outbound",
+                    "start_node": "北街",
+                    "end_node": "门诊二",
+                    "start": "2026-06-03T08:34",
+                    "end": "2026-06-03T08:58",
+                    "shift": "S22",
+                    "worker": "W2",
+                    "source": "rides",
+                    "plan": null
+                  },
+                  {
+                    "role": "outbound",
+                    "start_node": "北街",
+                    "end_node": "门诊二",
+                    "start": "2026-06-03T08:34",
+                    "end": "2026-06-03T08:58",
+                    "shift": "S24",
+                    "worker": "W4",
+                    "source": "rides",
+                    "plan": null
+                  },
+                  {
+                    "role": "return",
+                    "start_node": "门诊二",
+                    "end_node": "北街",
+                    "start": "2026-06-03T10:20",
+                    "end": "2026-06-03T11:02",
+                    "shift": "E3#1",
+                    "worker": "QUOTE-E3-W1",
+                    "source": "quote",
+                    "plan": "E3"
+                  },
+                  {
+                    "role": "return",
+                    "start_node": "门诊二",
+                    "end_node": "北街",
+                    "start": "2026-06-03T10:20",
+                    "end": "2026-06-03T11:02",
+                    "shift": "E3#2",
+                    "worker": "QUOTE-E3-W2",
+                    "source": "quote",
+                    "plan": "E3"
+                  }
+                ],
+                "relay": null,
+                "reasons": [],
+                "already_confirmed_trip": null
+              },
+              {
+                "ok": true,
+                "demand_key": "H6@2026-06-03",
+                "home": "H6",
+                "day": "2026-06-03",
+                "status": "already_confirmed",
+                "priority": {
+                  "earliest_expires": "2026-06-02T17:00",
+                  "requested_at": "2026-05-27T08:00",
+                  "order": "2026-06-02T17:00 < 2026-05-27T08:00 < H6"
+                },
+                "selected_booking": "P3",
+                "trip_kind": null,
+                "hold_until": "2026-06-02T17:00",
+                "assignments": [],
+                "relay": null,
+                "reasons": [],
+                "already_confirmed_trip": "Y2"
+              }
+            ],
+            "cancellation_scopes": [],
+            "pending_verification": []
+          }
+        }
+      ],
+      "additional_household_day_trips": 2,
+      "distinct_added_homes": [
+        "H5",
+        "H7"
+      ],
+      "average_additional_per_applicable_day": 1.0,
+      "added_category_counts": {
+        "outbound_return_home": 2
+      },
+      "added_category_labels": {
+        "outbound_return_home": "单程去院后直接返程回家（双人/单人按预约）"
+      },
+      "replay_cost_cents_for_all_comparable_days": 60000,
+      "replay_cost_yuan_for_all_comparable_days": 600.0,
+      "cost_cents_per_added_household_in_replay": 30000,
+      "remaining_unaccepted": [],
+      "substitution_audit": [
+        {
+          "day": "2026-05-27",
+          "trip": "Y1",
+          "booking": "P1",
+          "role": "follow",
+          "old_shift": "S13",
+          "quote_shifts_able_to_replace": [
+            "E3#1",
+            "E3#2"
+          ],
+          "net_new_treatment": "替换原承诺不计增单；固定承诺 replay 不移动"
+        },
+        {
+          "day": "2026-05-27",
+          "trip": "Y1",
+          "booking": "P1",
+          "role": "return",
+          "old_shift": "S13",
+          "quote_shifts_able_to_replace": [
+            "E3#1",
+            "E3#2"
+          ],
+          "net_new_treatment": "替换原承诺不计增单；固定承诺 replay 不移动"
+        },
+        {
+          "day": "2026-06-03",
+          "trip": "Y2",
+          "booking": "P3",
+          "role": "return",
+          "old_shift": "S23",
+          "quote_shifts_able_to_replace": [
+            "E3#1",
+            "E3#2"
+          ],
+          "net_new_treatment": "替换原承诺不计增单；固定承诺 replay 不移动"
+        }
+      ],
+      "net_new_only_rule": "已确认 Y1/Y2 等行程作为硬承诺保留；新增只计原 baseline 未覆盖户，不把 Quote 班组替换原有订单算作增单"
+    }
+  ],
+  "recommendation": {
+    "code": "recommend_net_new_complete_trips",
+    "text": "仅有能补齐双人末段能力的报价产生净新增完整行程；E2 类只补一人的报价不能在不破坏已确认承诺的情况下接下 team 户。",
+    "recommended_plans": [
+      "E3"
+    ],
+    "cost_cents_per_added_household_in_replay": 30000
+  },
+  "actual_outcomes_summary": {
+    "as_of": null,
+    "checkpoint_counts": {
+      "booking": {
+        "cancelled": 2
+      },
+      "record": {
+        "no_actual_record": 2
+      },
+      "hospital": {
+        "on_time": 2,
+        "late": 1
+      },
+      "hospital_release": {
+        "on_time": 3
+      },
+      "handover": {
+        "on_time": 4
+      },
+      "intake": {
+        "not_accepted": 2
+      }
+    },
+    "hospital_elapsed_by_site": {
+      "门诊一": {
+        "sample_count": 2,
+        "elapsed_minutes": [
+          63,
+          75
+        ],
+        "average_elapsed_minutes": 69.0,
+        "missing_evidence_rule": "缺少到/离院凭据的记录不参与平均，不按 0 分钟计入"
+      },
+      "门诊二": {
+        "sample_count": 1,
+        "elapsed_minutes": [
+          102
+        ],
+        "average_elapsed_minutes": 102.0,
+        "missing_evidence_rule": "缺少到/离院凭据的记录不参与平均，不按 0 分钟计入"
+      }
+    },
+    "hospital_average_usage_rule": "仅作实际结果展示；加班重放不使用院内平均耗时排班，而使用完整释放窗口和路线上限",
+    "bookings": [
+      {
+        "booking": "A1",
+        "home": "H1",
+        "date": "2026-06-10",
+        "trip": null,
+        "overall_status": "cancelled",
+        "intake_disposition": null,
+        "hospital_elapsed_minutes_if_both_evidence": null,
+        "receipts": [],
+        "wait_metrics_note": "仅有完整到离院凭据时计算院内停留；缺凭据为 null，不当作 0 等待",
+        "checkpoints": [
+          {
+            "point_type": "booking",
+            "point": "门诊一",
+            "status": "cancelled",
+            "occurred_at": "2026-06-08T12:00",
+            "registered_at": "2026-06-08T12:30",
+            "source": "appointment_notices"
+          }
+        ],
+        "evidence_visibility": {
+          "as_of": "all_records",
+          "visible_receipts": [],
+          "later_reported_receipts": []
+        }
+      },
+      {
+        "booking": "A2",
+        "home": "H1",
+        "date": "2026-06-10",
+        "trip": null,
+        "overall_status": "no_actual_record",
+        "intake_disposition": null,
+        "hospital_elapsed_minutes_if_both_evidence": null,
+        "receipts": [],
+        "wait_metrics_note": "仅有完整到离院凭据时计算院内停留；缺凭据为 null，不当作 0 等待",
+        "checkpoints": [
+          {
+            "point_type": "record",
+            "point": "门诊二",
+            "status": "no_actual_record",
+            "rule": "无受理结论、承诺或凭据；日档不完整时不推断为已接单或缺证待核"
+          }
+        ],
+        "evidence_visibility": {
+          "as_of": "all_records",
+          "visible_receipts": [],
+          "later_reported_receipts": []
+        }
+      },
+      {
+        "booking": "A3",
+        "home": "H2",
+        "date": "2026-06-10",
+        "trip": null,
+        "overall_status": "no_actual_record",
+        "intake_disposition": null,
+        "hospital_elapsed_minutes_if_both_evidence": null,
+        "receipts": [],
+        "wait_metrics_note": "仅有完整到离院凭据时计算院内停留；缺凭据为 null，不当作 0 等待",
+        "checkpoints": [
+          {
+            "point_type": "record",
+            "point": "门诊一",
+            "status": "no_actual_record",
+            "rule": "无受理结论、承诺或凭据；日档不完整时不推断为已接单或缺证待核"
+          }
+        ],
+        "evidence_visibility": {
+          "as_of": "all_records",
+          "visible_receipts": [],
+          "later_reported_receipts": []
+        }
+      },
+      {
+        "booking": "A4",
+        "home": "H3",
+        "date": "2026-06-10",
+        "trip": "Y3",
+        "overall_status": "recorded",
+        "intake_disposition": "confirmed",
+        "hospital_elapsed_minutes_if_both_evidence": 63,
+        "receipts": [
+          {
+            "receipt": "R31",
+            "trip": "Y3",
+            "booking": "A4",
+            "kind": "released",
+            "location": "门诊一",
+            "actual_at": "2026-06-10T10:15",
+            "registered_at": "2026-06-10T10:21",
+            "proof": "门诊离室凭证"
+          },
+          {
+            "receipt": "R32",
+            "trip": "Y3",
+            "booking": "A4",
+            "kind": "handed_over",
+            "location": "南街",
+            "actual_at": "2026-06-10T10:40",
+            "registered_at": "2026-06-12T12:00",
+            "proof": "补领家属签收"
+          }
+        ],
+        "wait_metrics_note": "仅有完整到离院凭据时计算院内停留；缺凭据为 null，不当作 0 等待",
+        "checkpoints": [
+          {
+            "point_type": "hospital",
+            "point": "门诊一",
+            "status": "on_time",
+            "actual_at": "2026-06-10T09:12",
+            "registered_at": "2026-06-10T09:13",
+            "late_minutes": 0,
+            "source": "appointment_notices",
+            "proof": null
+          },
+          {
+            "point_type": "hospital_release",
+            "point": "门诊一",
+            "status": "on_time",
+            "actual_at": "2026-06-10T10:15",
+            "registered_at": "2026-06-10T10:21",
+            "late_minutes": 0,
+            "source": "trip_receipts",
+            "proof": "门诊离室凭证"
+          },
+          {
+            "point_type": "handover",
+            "point": "南街",
+            "role": "return",
+            "status": "on_time",
+            "registration_status": "late_backfill",
+            "actual_at": "2026-06-10T10:40",
+            "registered_at": "2026-06-12T12:00",
+            "deadline": "2026-06-10T10:40",
+            "late_minutes": 0,
+            "registration_lag_minutes": 2960,
+            "backfilled": true,
+            "backfilled_after_archive": false,
+            "receipt": "R32",
+            "proof": "补领家属签收"
+          }
+        ],
+        "evidence_visibility": {
+          "as_of": "all_records",
+          "visible_receipts": [
+            "R31",
+            "R32"
+          ],
+          "later_reported_receipts": []
+        }
+      },
+      {
+        "booking": "P1",
+        "home": "H4",
+        "date": "2026-05-27",
+        "trip": "Y1",
+        "overall_status": "recorded",
+        "intake_disposition": "confirmed",
+        "hospital_elapsed_minutes_if_both_evidence": 102,
+        "receipts": [
+          {
+            "receipt": "R11",
+            "trip": "Y1",
+            "booking": "P1",
+            "kind": "picked_up",
+            "location": "北街",
+            "actual_at": "2026-05-27T08:24",
+            "registered_at": "2026-05-27T08:29",
+            "proof": "署名交接单"
+          },
+          {
+            "receipt": "R12",
+            "trip": "Y1",
+            "booking": "P1",
+            "kind": "arrived",
+            "location": "门诊二",
+            "actual_at": "2026-05-27T08:47",
+            "registered_at": "2026-05-27T08:52",
+            "proof": "门诊到达凭证"
+          },
+          {
+            "receipt": "R13",
+            "trip": "Y1",
+            "booking": "P1",
+            "kind": "released",
+            "location": "门诊二",
+            "actual_at": "2026-05-27T10:29",
+            "registered_at": "2026-05-27T10:30",
+            "proof": "门诊离室凭证"
+          },
+          {
+            "receipt": "R14",
+            "trip": "Y1",
+            "booking": "P1",
+            "kind": "handed_over",
+            "location": "中心站",
+            "actual_at": "2026-05-27T10:48",
+            "registered_at": "2026-05-27T10:52",
+            "proof": "站点接领单"
+          },
+          {
+            "receipt": "R15",
+            "trip": "Y1",
+            "booking": "P1",
+            "kind": "handed_over",
+            "location": "北街",
+            "actual_at": "2026-05-27T11:22",
+            "registered_at": "2026-05-27T11:27",
+            "proof": "家属签收"
+          }
+        ],
+        "wait_metrics_note": "仅有完整到离院凭据时计算院内停留；缺凭据为 null，不当作 0 等待",
+        "checkpoints": [
+          {
+            "point_type": "hospital",
+            "point": "门诊二",
+            "status": "on_time",
+            "actual_at": "2026-05-27T08:47",
+            "registered_at": "2026-05-27T08:52",
+            "late_minutes": 0,
+            "source": "trip_receipts",
+            "proof": "门诊到达凭证"
+          },
+          {
+            "point_type": "hospital_release",
+            "point": "门诊二",
+            "status": "on_time",
+            "actual_at": "2026-05-27T10:29",
+            "registered_at": "2026-05-27T10:30",
+            "late_minutes": 0,
+            "source": "trip_receipts",
+            "proof": "门诊离室凭证"
+          },
+          {
+            "point_type": "handover",
+            "point": "中心站",
+            "role": "follow",
+            "status": "on_time",
+            "registration_status": "registered",
+            "actual_at": "2026-05-27T10:48",
+            "registered_at": "2026-05-27T10:52",
+            "deadline": "2026-05-27T11:15",
+            "late_minutes": 0,
+            "registration_lag_minutes": 4,
+            "backfilled": false,
+            "backfilled_after_archive": false,
+            "receipt": "R14",
+            "proof": "站点接领单"
+          },
+          {
+            "point_type": "handover",
+            "point": "北街",
+            "role": "return",
+            "status": "on_time",
+            "registration_status": "registered",
+            "actual_at": "2026-05-27T11:22",
+            "registered_at": "2026-05-27T11:27",
+            "deadline": "2026-05-27T11:29",
+            "late_minutes": 0,
+            "registration_lag_minutes": 5,
+            "backfilled": false,
+            "backfilled_after_archive": false,
+            "receipt": "R15",
+            "proof": "家属签收"
+          }
+        ],
+        "evidence_visibility": {
+          "as_of": "all_records",
+          "visible_receipts": [
+            "R11",
+            "R12",
+            "R13",
+            "R14",
+            "R15"
+          ],
+          "later_reported_receipts": []
+        }
+      },
+      {
+        "booking": "P2",
+        "home": "H5",
+        "date": "2026-05-27",
+        "trip": null,
+        "overall_status": "not_accepted",
+        "intake_disposition": "no_complete_trip",
+        "hospital_elapsed_minutes_if_both_evidence": null,
+        "receipts": [],
+        "wait_metrics_note": "仅有完整到离院凭据时计算院内停留；缺凭据为 null，不当作 0 等待",
+        "checkpoints": [
+          {
+            "point_type": "intake",
+            "point": "门诊一",
+            "status": "not_accepted",
+            "registered_at": "2026-05-26T15:46",
+            "disposition": "no_complete_trip"
+          }
+        ],
+        "evidence_visibility": {
+          "as_of": "all_records",
+          "visible_receipts": [],
+          "later_reported_receipts": []
+        }
+      },
+      {
+        "booking": "P3",
+        "home": "H6",
+        "date": "2026-06-03",
+        "trip": "Y2",
+        "overall_status": "recorded",
+        "intake_disposition": "confirmed",
+        "hospital_elapsed_minutes_if_both_evidence": 75,
+        "receipts": [
+          {
+            "receipt": "R21",
+            "trip": "Y2",
+            "booking": "P3",
+            "kind": "picked_up",
+            "location": "南街",
+            "actual_at": "2026-06-03T08:47",
+            "registered_at": "2026-06-03T08:51",
+            "proof": "署名交接单"
+          },
+          {
+            "receipt": "R22",
+            "trip": "Y2",
+            "booking": "P3",
+            "kind": "arrived",
+            "location": "门诊一",
+            "actual_at": "2026-06-03T09:12",
+            "registered_at": "2026-06-03T09:14",
+            "proof": "门诊到达凭证"
+          },
+          {
+            "receipt": "R23",
+            "trip": "Y2",
+            "booking": "P3",
+            "kind": "released",
+            "location": "门诊一",
+            "actual_at": "2026-06-03T10:27",
+            "registered_at": "2026-06-03T10:28",
+            "proof": "门诊离室凭证"
+          },
+          {
+            "receipt": "R24",
+            "trip": "Y2",
+            "booking": "P3",
+            "kind": "handed_over",
+            "location": "南街",
+            "actual_at": "2026-06-03T10:53",
+            "registered_at": "2026-06-03T11:03",
+            "proof": "家属签收"
+          }
+        ],
+        "wait_metrics_note": "仅有完整到离院凭据时计算院内停留；缺凭据为 null，不当作 0 等待",
+        "checkpoints": [
+          {
+            "point_type": "hospital",
+            "point": "门诊一",
+            "status": "late",
+            "actual_at": "2026-06-03T09:12",
+            "registered_at": "2026-06-03T09:14",
+            "late_minutes": 7,
+            "source": "trip_receipts",
+            "proof": "门诊到达凭证"
+          },
+          {
+            "point_type": "hospital_release",
+            "point": "门诊一",
+            "status": "on_time",
+            "actual_at": "2026-06-03T10:27",
+            "registered_at": "2026-06-03T10:28",
+            "late_minutes": 0,
+            "source": "trip_receipts",
+            "proof": "门诊离室凭证"
+          },
+          {
+            "point_type": "handover",
+            "point": "南街",
+            "role": "return",
+            "status": "on_time",
+            "registration_status": "registered",
+            "actual_at": "2026-06-03T10:53",
+            "registered_at": "2026-06-03T11:03",
+            "deadline": "2026-06-03T10:57",
+            "late_minutes": 0,
+            "registration_lag_minutes": 10,
+            "backfilled": false,
+            "backfilled_after_archive": false,
+            "receipt": "R24",
+            "proof": "家属签收"
+          }
+        ],
+        "evidence_visibility": {
+          "as_of": "all_records",
+          "visible_receipts": [
+            "R21",
+            "R22",
+            "R23",
+            "R24"
+          ],
+          "later_reported_receipts": []
+        }
+      },
+      {
+        "booking": "P4",
+        "home": "H7",
+        "date": "2026-06-03",
+        "trip": null,
+        "overall_status": "not_accepted",
+        "intake_disposition": "no_complete_trip",
+        "hospital_elapsed_minutes_if_both_evidence": null,
+        "receipts": [],
+        "wait_metrics_note": "仅有完整到离院凭据时计算院内停留；缺凭据为 null，不当作 0 等待",
+        "checkpoints": [
+          {
+            "point_type": "intake",
+            "point": "门诊二",
+            "status": "not_accepted",
+            "registered_at": "2026-06-02T15:25",
+            "disposition": "no_complete_trip"
+          }
+        ],
+        "evidence_visibility": {
+          "as_of": "all_records",
+          "visible_receipts": [],
+          "later_reported_receipts": []
+        }
+      },
+      {
+        "booking": "P5",
+        "home": "H8",
+        "date": "2026-06-04",
+        "trip": null,
+        "overall_status": "cancelled",
+        "intake_disposition": "cancelled",
+        "hospital_elapsed_minutes_if_both_evidence": null,
+        "receipts": [],
+        "wait_metrics_note": "仅有完整到离院凭据时计算院内停留；缺凭据为 null，不当作 0 等待",
+        "checkpoints": [
+          {
+            "point_type": "booking",
+            "point": "门诊一",
+            "status": "cancelled",
+            "occurred_at": "2026-06-03T11:15",
+            "registered_at": "2026-06-03T11:25",
+            "source": "appointment_notices"
+          }
+        ],
+        "evidence_visibility": {
+          "as_of": "all_records",
+          "visible_receipts": [],
+          "later_reported_receipts": []
+        }
+      }
+    ]
+  },
+  "current_acceptance_at": "2026-11-25T18:06",
+  "current_recommendation": {
+    "code": "historical_gain_but_quotes_expired",
+    "text": "历史重放显示过增量，但这些报价已过 valid_until；请取新工作周报价后再比较。",
+    "recommended_plans": [],
+    "historically_effective_plans": [
+      "E3"
+    ]
+  }
+}
